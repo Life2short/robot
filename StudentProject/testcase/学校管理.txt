@@ -1,0 +1,49 @@
+*** Settings ***
+Library           Selenium2Library
+Resource          ../Libs/business/学校管理.txt
+Resource          ../Libs/business/login.txt
+Variables    ../settings/test.py
+Suite Setup    登录流程    ${user}    ${pw}
+Suite Teardown    关闭浏览器
+Test Teardown    Reload Page
+*** Test Cases ***
+新建小学
+    ${now}   Get Time    epoch
+    ${now}   evaluate    str(${now})
+    新增学校    ${now}    小学    小学     ${now}
+    # page should contain    ${now}
+    
+新建初中
+    ${now}   Get Time    epoch
+    ${now}   evaluate    str($now)
+    新增学校    ${now}    test1    初中    ${now}
+    # page should contain    ${now}
+    
+新建高中
+    ${now}   Get Time    epoch
+    ${now}   evaluate    str($now)
+    新增学校    ${now}    test1    高中    ${now}
+    # page should contain    ${now}
+    
+新建幼儿园
+    ${now}   Get Time    epoch
+    ${now}   evaluate    str($now)
+    新增学校    ${now}    test1    幼儿园    ${now}
+    # page should contain    ${now}
+    
+招生录取时间设置
+    ${now}   Get Time    epoch
+    ${now}   evaluate    str($now)
+    设置招生录取时间    ${now}    test1    小学    ${now}    2019-5-10    2019-5-30
+         
+    
+学校名称为空
+    # ${now}   Get Time    epoch
+    ${now}   evaluate    ""
+    新增学校    ${now}    小学    小学     请输入学校名称
+    
+# 文件导入学生信息
+    # 导入学生信息
+    # Sleep    5    
+
+    

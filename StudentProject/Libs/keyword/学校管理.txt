@@ -1,0 +1,118 @@
+*** Setting ***
+Library    Selenium2Library
+
+*** Keywords ***
+点击新建学校
+    Wait Until Element Is Enabled    xpath=//*[@id="sour"]/div[4]/button[1]
+    Click Button    xpath=//*[@id="sour"]/div[4]/button[1]
+
+输入学校名称
+    [Arguments]    ${text}
+    Wait Until Element Is Visible    Xpath=//*[@id="schoolName_add"]
+    Input Text    Xpath=//*[@id="schoolName_add"]    ${text}
+    
+勾选小学
+    Click Element    Xpath=//*[@id="add_schoolType2"]
+    
+勾选初中
+    Click Element    Xpath=//*[@id="add_schoolType3"]
+    
+勾选高中
+    Click Element    Xpath=//*[@id="add_schoolType4"]
+    
+勾选幼儿园
+    Click Element    Xpath=//*[@id="add_schoolType1"]
+    
+输入备注
+    [Arguments]    ${text}
+    Input Text    Xpath=//*[@id="remark_add"]    ${text}
+    
+点击提交
+    Click Button    Xpath=//*[@id="addSchoolSubmit"]                    
+    
+点击设置学生录入时间
+    Click Button    Xpath=//*[@id="sour"]/div[4]/button[2]
+
+点击设置招生录取时间
+    Wait Until Element Is Enabled    Xpath=//*[@id="sour"]/div[4]/button[3]
+    Click Button    Xpath=//*[@id="sour"]/div[4]/button[3]                    
+    
+点击重置密码
+    Click Button    Xpath=//*[@id="sour"]/div[4]/button[4]
+    
+点击启用时间
+    Click Button    Xpath=//*[@id="sour"]/div[4]/button[5]
+    
+点击禁用
+    Click Button    Xpath=//*[@id="sour"]/div[4]/button[6] 
+    
+等待返回列表
+    Wait Until Element Is Visible    Xpath=//*[@id="schoolInfoList"]/tr[1]/td[3]
+    
+点击限制录入时间
+    Wait Until Element Is Visible    Xpath=//*[@id="recruitEndDate"]
+    Click Element    Xpath=//*[@id="recruitEndDate"]   
+    
+选择开始时间
+    [Arguments]    ${starttime}
+    Assign Id To Element    Xpath=//*[@id="recruitStartTime"]    StartTime
+    Execute Javascript    window.document.getElementById('StartTime').value=${starttime}
+    
+选择结束时间
+    [Arguments]    ${endtime}
+    Assign Id To Element    Xpath=//*[@id="recruitEndTime"]    EndTime
+    Execute Javascript    window.document.getElementById('EndTime').value=${endtime}
+
+点击学生录入时间设置确定
+        
+    Assign Id To Element    Xpath=//*[@id="setStudentRecruitTime"]    settime
+    # Click Button    Xpath=//*[@id="setStudentRecruitTime"]
+    # Sleep    5
+    Execute Javascript    window.document.getElementById('settime').click()
+
+点击学校复选框
+    # Wait Until Element Is Visible    Xpath=//*[@id="Checkbox1"]
+    Wait Until Element Is Enabled    Xpath=//*[@id="Checkbox1"]    
+    Click Element    Xpath=//*[@id="Checkbox1"]
+    
+点击限制招生时间
+    Wait Until Element Is Visible    Xpath=//*[@id="limitTime"]
+    Click Element    Xpath=//*[@id="limitTime"]
+    
+选择招生开始时间
+    [Arguments]    ${starttime}
+    Assign Id To Element    Xpath=//*[@id="startTime"]    startTime
+    Execute Javascript    window.document.getElementById('startTime').value="${starttime}"
+    
+选择招生结束时间
+    [Arguments]    ${endtime}
+    Assign Id To Element    Xpath=//*[@id="endTime"]    endTime
+    Execute Javascript    window.document.getElementById('endTime').value="${endtime}"  
+    
+点击招生录取时间设置确定
+    Click Button    Xpath=//*[@id="setEnrollmentTime"]  
+    
+获取招生录入时间
+    Wait Until Element Is Visible   Xpath=//*[@id="schoolInfoList"]/tr[1]/td[6]
+    ${time}=    Get Text    Xpath=//*[@id="schoolInfoList"]/tr[1]/td[6]
+    log    ${time}
+    [Return]      ${time}
+      
+点击导入学生信息
+    Click Button    Xpath=//*[@id="sour"]/div[3]/button[3]
+    
+上传文件
+    Wait Until Element Is Enabled    Xpath=//*[@id="file"]
+    Choose File    Xpath=//*[@id="file"]    E:\\学生导入模板.xls
+    
+点击确认导入
+    Wait Until Element Is visible    css=input[value="确认导入"]    5
+    Click Element    css=input[value="确认导入"]
+    
+等待导入完成
+    Wait Until Element Is visible    css=input[value="导出错误记录"]  
+    
+关闭导入学生结果
+    Click Button    Xpath=//*[@value="导出错误记录"]/../../div[1]/button
+    
+

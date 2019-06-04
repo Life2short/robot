@@ -1,0 +1,16 @@
+*** Settings ***
+Library           Selenium2Library
+Resource          ../keyword/login.txt
+Variables    ../../settings/test.py
+*** Keywords ***
+登录页面
+    [Arguments]    ${user}    ${pw}
+    打开浏览器    ${login}
+    输入用户名    ${user}
+    输入密码    ${pw}
+    点击登录
+
+登录检查
+    [Arguments]    ${res}
+    Run Keyword If    $res=='Pass'    检查登录成功
+    Run Keyword If    $res=="Fail"    检查登录失败

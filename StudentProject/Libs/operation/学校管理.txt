@@ -1,0 +1,49 @@
+*** Settings ***
+Library           Selenium2Library
+Resource          ../keyword/学校管理.txt
+Variables    ../../settings/test.py
+*** Keywords ***
+新增学校页面
+    [Arguments]    ${shool_name}    ${remard}    ${shool}
+    点击新建学校
+    输入学校名称    ${shool_name}
+    Run Keyword If    $shool=='小学'    勾选小学
+    ...    ELSE IF    $shool=='初中'    勾选初中
+    ...    ELSE IF    $shool=='高中'    勾选高中
+    ...    ELSE IF    $shool=='幼儿园'    勾选幼儿园
+    输入备注    ${remard}
+    点击提交
+    等待返回列表
+    
+设置学生录入时间
+    [Arguments]    ${starttime}    ${endtime}
+    点击学校复选框
+    点击设置学生录入时间
+    点击限制录入时间
+    选择开始时间    ${starttime}
+    选择结束时间    ${endtime}
+    点击学生录入时间设置确定
+    
+设置招生录取时间页面
+    [Arguments]    ${starttime}    ${endtime}
+    点击学校复选框
+    点击设置招生录取时间
+    点击限制招生时间
+    选择招生开始时间    ${starttime}
+    选择招生结束时间    ${endtime}
+    点击招生录取时间设置确定
+
+    
+导入学生信息
+    点击导入学生信息
+    上传文件
+    点击确认导入
+    等待导入完成
+    关闭导入学生结果
+    
+    
+    
+    
+    
+    
+    

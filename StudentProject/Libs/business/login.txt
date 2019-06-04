@@ -1,0 +1,9 @@
+ *** Settings ***
+Library           Selenium2Library
+Resource          ../operation/login.txt
+
+*** Keywords ***
+登录流程
+    [Arguments]    ${user}    ${pw}
+    登录页面    ${user}    ${pw}
+    登录检查    Pass

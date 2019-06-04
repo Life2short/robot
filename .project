@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>robot</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>libspecs/BuiltIn.py</name>
+			<type>1</type>
+			<location>D:/Program Files/Python35/Lib/site-packages/robot/libraries/BuiltIn.py</location>
+		</link>
+	</linkedResources>
+</projectDescription>
