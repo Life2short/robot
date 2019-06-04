@@ -1,0 +1,9 @@
+*** Setting ***
+Library    DatabaseLibrary    
+*** Keywords ***
+执行sql
+    [Arguments]    ${sql}
+    Connect To Database Using Custom Params    pymysql    database='recruit_students', user='root', password='123456', host='localhost', port=3306
+    Execute Sql String    ${sql}
+    Disconnect From Database
+    

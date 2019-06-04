@@ -1,12 +1,16 @@
  *** Settings ***
 Library           Selenium2Library
-Resource          ../operation/学校管理.txt
+Library           DatabaseLibrary
+Resource    ../operation/学校管理.txt
+Resource    ../public/mysql.txt
 
 *** Keywords ***
 新增学校
     [Arguments]    ${shool}    ${type}    ${remard}    ${expected}
     新增学校页面    ${shool}    ${type}    ${remard}
     page should contain    ${expected}
+    Comment    删除数据
+    执行sql    DELETE from t_school_info WHERE f_school_name ="${shool}";
     
 设置招生录取时间
     [Arguments]    ${shool}    ${type}    ${remard}    ${expected}    ${starttime}    ${endtime}
@@ -16,5 +20,6 @@ Resource          ../operation/学校管理.txt
     ${res_time}=    Catenate    SEPARATOR=    ${starttime}    ,    \n    ${endtime}
     ${gettime}=    获取招生录入时间    
     Should Contain    ${gettime}    ${res_time}
+    执行sql    DELETE from t_school_info WHERE f_school_name ="${shool}";
     
     

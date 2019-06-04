@@ -1,0 +1,12 @@
+*** Settings ***
+Library    DatabaseLibrary    
+
+*** Test Cases ***
+test
+    ${now}   Get Time    epoch
+    ${now}   evaluate    str(${now})
+    Connect To Database Using Custom Params    pymysql    database='recruit_students', user='root', password='123456', host='localhost', port=3306
+    Execute Sql String    DELETE from t_school_info WHERE f_school_name =${now};
+    Disconnect From Database
+    
+    
