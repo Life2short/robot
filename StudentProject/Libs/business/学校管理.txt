@@ -7,6 +7,7 @@ Resource    ../public/mysql.txt
 *** Keywords ***
 新增学校
     [Arguments]    ${shool}    ${type}    ${remard}    ${expected}
+    Comment    ${shool}:学校名称，${type}：学校类型，${remard}：备注，${expected}：期望值
     新增学校页面    ${shool}    ${type}    ${remard}
     page should contain    ${expected}
     Comment    删除数据
@@ -14,12 +15,14 @@ Resource    ../public/mysql.txt
     
 设置招生录取时间
     [Arguments]    ${shool}    ${type}    ${remard}    ${expected}    ${starttime}    ${endtime}
+    Comment    ${shool}:学校名称，${type}：学校类型，${remard}：备注，${expected}：期望值，${starttime}：开始时间，${endtime}：结束时间
     新增学校页面    ${shool}    ${type}    ${remard}
     page should contain    ${expected}
     设置招生录取时间页面    ${starttime}    ${endtime}
     ${res_time}=    Catenate    SEPARATOR=    ${starttime}    ,    \n    ${endtime}
     ${gettime}=    获取招生录入时间    
     Should Contain    ${gettime}    ${res_time}
+    Comment    删除数据
     执行sql    DELETE from t_school_info WHERE f_school_name ="${shool}";
     
     

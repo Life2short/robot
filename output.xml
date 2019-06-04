@@ -1,93 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20190604 22:24:18.620" generator="Robot 3.0.4 (Python 3.5.1 on win32)">
-<suite source="D:\eclipse-workspace\robot" id="s1" name="Robot">
-<suite source="D:\eclipse-workspace\robot\StudentProject" id="s1-s1" name="StudentProject">
-<suite source="D:\eclipse-workspace\robot\StudentProject\testcase" id="s1-s1-s1" name="Testcase">
-<suite source="D:\eclipse-workspace\robot\StudentProject\testcase\学校管理.txt" id="s1-s1-s1-s1" name="学校管理">
-<kw type="setup" library="login" name="登录流程">
+<robot generator="Robot 3.0.4 (Python 3.5.1 on win32)" generated="20190604 23:12:14.639">
+<suite name="Robot" id="s1" source="D:\eclipse-workspace\robot">
+<suite name="StudentProject" id="s1-s1" source="D:\eclipse-workspace\robot\StudentProject">
+<suite name="Testcase" id="s1-s1-s1" source="D:\eclipse-workspace\robot\StudentProject\testcase">
+<suite name="学校管理" id="s1-s1-s1-s1" source="D:\eclipse-workspace\robot\StudentProject\testcase\学校管理.txt">
+<kw name="登录流程" library="login" type="setup">
 <arguments>
 <arg>${user}</arg>
 <arg>${pw}</arg>
 </arguments>
-<kw library="login" name="登录页面">
+<kw name="登录页面" library="login">
 <arguments>
 <arg>${user}</arg>
 <arg>${pw}</arg>
 </arguments>
-<kw library="login" name="打开浏览器">
+<kw name="打开浏览器" library="login">
 <arguments>
 <arg>${login}</arg>
 </arguments>
-<kw library="Selenium2Library" name="Open Browser">
+<kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>${login}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:19.236">Opening browser 'chrome' to base url 'http://127.0.0.1:8090/recruit.students/login/view'.</msg>
-<status starttime="20190604 22:24:19.235" status="PASS" endtime="20190604 22:24:33.280"></status>
+<msg level="INFO" timestamp="20190604 23:12:15.385">Opening browser 'chrome' to base url 'http://127.0.0.1:8090/recruit.students/login/view'.</msg>
+<status endtime="20190604 23:12:35.213" status="PASS" starttime="20190604 23:12:15.384"></status>
 </kw>
-<kw library="Selenium2Library" name="Maximize Browser Window">
+<kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status starttime="20190604 22:24:33.282" status="PASS" endtime="20190604 22:24:34.486"></status>
+<status endtime="20190604 23:12:36.412" status="PASS" starttime="20190604 23:12:35.215"></status>
 </kw>
-<status starttime="20190604 22:24:19.234" status="PASS" endtime="20190604 22:24:34.486"></status>
+<status endtime="20190604 23:12:36.414" status="PASS" starttime="20190604 23:12:15.383"></status>
 </kw>
-<kw library="login" name="输入用户名">
+<kw name="输入用户名" library="login">
 <arguments>
 <arg>${user}</arg>
 </arguments>
-<kw library="Selenium2Library" name="Input Text">
+<kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>id =txtUserName</arg>
 <arg>${user}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:34.489">Typing text 'admin' into text field 'id =txtUserName'.</msg>
-<status starttime="20190604 22:24:34.488" status="PASS" endtime="20190604 22:24:34.634"></status>
+<msg level="INFO" timestamp="20190604 23:12:36.420">Typing text 'admin' into text field 'id =txtUserName'.</msg>
+<status endtime="20190604 23:12:36.581" status="PASS" starttime="20190604 23:12:36.419"></status>
 </kw>
-<status starttime="20190604 22:24:34.487" status="PASS" endtime="20190604 22:24:34.635"></status>
+<status endtime="20190604 23:12:36.582" status="PASS" starttime="20190604 23:12:36.417"></status>
 </kw>
-<kw library="login" name="输入密码">
+<kw name="输入密码" library="login">
 <arguments>
 <arg>${pw}</arg>
 </arguments>
-<kw library="Selenium2Library" name="Input Password">
+<kw name="Input Password" library="Selenium2Library">
 <doc>Types the given password into text field identified by ``locator``.</doc>
 <arguments>
 <arg>id = txtPassword</arg>
 <arg>${pw}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:34.637">Typing password into text field 'id = txtPassword'.</msg>
-<status starttime="20190604 22:24:34.636" status="PASS" endtime="20190604 22:24:34.906"></status>
+<msg level="INFO" timestamp="20190604 23:12:36.586">Typing password into text field 'id = txtPassword'.</msg>
+<status endtime="20190604 23:12:36.947" status="PASS" starttime="20190604 23:12:36.585"></status>
 </kw>
-<status starttime="20190604 22:24:34.635" status="PASS" endtime="20190604 22:24:34.908"></status>
+<status endtime="20190604 23:12:36.949" status="PASS" starttime="20190604 23:12:36.584"></status>
 </kw>
-<kw library="login" name="点击登录">
-<kw library="Selenium2Library" name="Click Link">
+<kw name="点击登录" library="login">
+<kw name="Click Link" library="Selenium2Library">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>登录</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:34.913">Clicking link '登录'.</msg>
-<status starttime="20190604 22:24:34.912" status="PASS" endtime="20190604 22:24:35.799"></status>
+<msg level="INFO" timestamp="20190604 23:12:36.953">Clicking link '登录'.</msg>
+<status endtime="20190604 23:12:37.984" status="PASS" starttime="20190604 23:12:36.952"></status>
 </kw>
-<status starttime="20190604 22:24:34.910" status="PASS" endtime="20190604 22:24:35.800"></status>
+<status endtime="20190604 23:12:37.985" status="PASS" starttime="20190604 23:12:36.951"></status>
 </kw>
-<status starttime="20190604 22:24:19.234" status="PASS" endtime="20190604 22:24:35.801"></status>
+<status endtime="20190604 23:12:37.986" status="PASS" starttime="20190604 23:12:15.382"></status>
 </kw>
-<kw library="login" name="登录检查">
+<kw name="登录检查" library="login">
 <arguments>
 <arg>Pass</arg>
 </arguments>
-<kw library="BuiltIn" name="Run Keyword If">
+<kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <arguments>
 <arg>$res=='Pass'</arg>
 <arg>检查登录成功</arg>
 </arguments>
-<kw library="login" name="检查登录成功">
-<kw library="Selenium2Library" name="Get Text">
+<kw name="检查登录成功" library="login">
+<kw name="Get Text" library="Selenium2Library">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath =/html/body/div[1]/div[1]/a</arg>
@@ -95,35 +95,35 @@
 <assign>
 <var>${text}</var>
 </assign>
-<msg level="INFO" timestamp="20190604 22:24:35.863">${text} = 退出登录</msg>
-<status starttime="20190604 22:24:35.811" status="PASS" endtime="20190604 22:24:35.864"></status>
+<msg level="INFO" timestamp="20190604 23:12:38.053">${text} = 退出登录</msg>
+<status endtime="20190604 23:12:38.053" status="PASS" starttime="20190604 23:12:37.998"></status>
 </kw>
-<kw library="BuiltIn" name="Should Contain">
+<kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
 <arguments>
 <arg>${text}</arg>
 <arg>退出登录</arg>
 </arguments>
-<status starttime="20190604 22:24:35.864" status="PASS" endtime="20190604 22:24:35.866"></status>
+<status endtime="20190604 23:12:38.055" status="PASS" starttime="20190604 23:12:38.054"></status>
 </kw>
-<status starttime="20190604 22:24:35.810" status="PASS" endtime="20190604 22:24:35.866"></status>
+<status endtime="20190604 23:12:38.056" status="PASS" starttime="20190604 23:12:37.997"></status>
 </kw>
-<status starttime="20190604 22:24:35.803" status="PASS" endtime="20190604 22:24:35.867"></status>
+<status endtime="20190604 23:12:38.056" status="PASS" starttime="20190604 23:12:37.989"></status>
 </kw>
-<kw library="BuiltIn" name="Run Keyword If">
+<kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <arguments>
 <arg>$res=="Fail"</arg>
 <arg>检查登录失败</arg>
 </arguments>
-<status starttime="20190604 22:24:35.868" status="PASS" endtime="20190604 22:24:35.870"></status>
+<status endtime="20190604 23:12:38.059" status="PASS" starttime="20190604 23:12:38.057"></status>
 </kw>
-<status starttime="20190604 22:24:35.802" status="PASS" endtime="20190604 22:24:35.871"></status>
+<status endtime="20190604 23:12:38.060" status="PASS" starttime="20190604 23:12:37.987"></status>
 </kw>
-<status starttime="20190604 22:24:19.232" status="PASS" endtime="20190604 22:24:35.872"></status>
+<status endtime="20190604 23:12:38.060" status="PASS" starttime="20190604 23:12:15.381"></status>
 </kw>
-<test id="s1-s1-s1-s1-t1" name="新建小学">
-<kw library="BuiltIn" name="Get Time">
+<test name="新建小学" id="s1-s1-s1-s1-t1">
+<kw name="Get Time" library="BuiltIn">
 <doc>Returns the given time in the requested format.</doc>
 <arguments>
 <arg>epoch</arg>
@@ -131,10 +131,10 @@
 <assign>
 <var>${now}</var>
 </assign>
-<msg level="INFO" timestamp="20190604 22:24:35.875">${now} = 1559658275</msg>
-<status starttime="20190604 22:24:35.874" status="PASS" endtime="20190604 22:24:35.876"></status>
+<msg level="INFO" timestamp="20190604 23:12:38.064">${now} = 1559661158</msg>
+<status endtime="20190604 23:12:38.064" status="PASS" starttime="20190604 23:12:38.063"></status>
 </kw>
-<kw library="BuiltIn" name="Evaluate">
+<kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
 <arguments>
 <arg>str(${now})</arg>
@@ -142,63 +142,70 @@
 <assign>
 <var>${now}</var>
 </assign>
-<msg level="INFO" timestamp="20190604 22:24:35.877">${now} = 1559658275</msg>
-<status starttime="20190604 22:24:35.876" status="PASS" endtime="20190604 22:24:35.878"></status>
+<msg level="INFO" timestamp="20190604 23:12:38.065">${now} = 1559661158</msg>
+<status endtime="20190604 23:12:38.066" status="PASS" starttime="20190604 23:12:38.065"></status>
 </kw>
-<kw library="学校管理" name="新增学校">
+<kw name="新增学校" library="学校管理">
 <arguments>
 <arg>${now}</arg>
 <arg>小学</arg>
 <arg>小学</arg>
 <arg>${now}</arg>
 </arguments>
-<kw library="学校管理" name="新增学校页面">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>${shool}:学校名称，${type}：学校类型，${remard}：备注，${expected}：期望值</arg>
+</arguments>
+<status endtime="20190604 23:12:38.069" status="PASS" starttime="20190604 23:12:38.068"></status>
+</kw>
+<kw name="新增学校页面" library="学校管理">
 <arguments>
 <arg>${shool}</arg>
 <arg>${type}</arg>
 <arg>${remard}</arg>
 </arguments>
-<kw library="学校管理" name="点击新建学校">
-<kw library="Selenium2Library" name="Wait Until Element Is Enabled">
+<kw name="点击新建学校" library="学校管理">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until element ``locator`` is enabled.</doc>
 <arguments>
 <arg>xpath=//*[@id="sour"]/div[4]/button[1]</arg>
 </arguments>
-<status starttime="20190604 22:24:35.886" status="PASS" endtime="20190604 22:24:35.938"></status>
+<status endtime="20190604 23:12:38.124" status="PASS" starttime="20190604 23:12:38.071"></status>
 </kw>
-<kw library="Selenium2Library" name="Click Button">
+<kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="sour"]/div[4]/button[1]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:35.940">Clicking button 'xpath=//*[@id="sour"]/div[4]/button[1]'.</msg>
-<status starttime="20190604 22:24:35.939" status="PASS" endtime="20190604 22:24:36.069"></status>
+<msg level="INFO" timestamp="20190604 23:12:38.125">Clicking button 'xpath=//*[@id="sour"]/div[4]/button[1]'.</msg>
+<status endtime="20190604 23:12:38.299" status="PASS" starttime="20190604 23:12:38.125"></status>
 </kw>
-<status starttime="20190604 22:24:35.884" status="PASS" endtime="20190604 22:24:36.070"></status>
+<status endtime="20190604 23:12:38.300" status="PASS" starttime="20190604 23:12:38.070"></status>
 </kw>
-<kw library="学校管理" name="输入学校名称">
+<kw name="输入学校名称" library="学校管理">
 <arguments>
 <arg>${shool_name}</arg>
 </arguments>
-<kw library="Selenium2Library" name="Wait Until Element Is Visible">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolName_add"]</arg>
 </arguments>
-<status starttime="20190604 22:24:36.073" status="PASS" endtime="20190604 22:24:36.386"></status>
+<status endtime="20190604 23:12:38.598" status="PASS" starttime="20190604 23:12:38.303"></status>
 </kw>
-<kw library="Selenium2Library" name="Input Text">
+<kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolName_add"]</arg>
 <arg>${text}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:36.389">Typing text '1559658275' into text field 'Xpath=//*[@id="schoolName_add"]'.</msg>
-<status starttime="20190604 22:24:36.387" status="PASS" endtime="20190604 22:24:36.777"></status>
+<msg level="INFO" timestamp="20190604 23:12:38.601">Typing text '1559661158' into text field 'Xpath=//*[@id="schoolName_add"]'.</msg>
+<status endtime="20190604 23:12:39.185" status="PASS" starttime="20190604 23:12:38.599"></status>
 </kw>
-<status starttime="20190604 22:24:36.071" status="PASS" endtime="20190604 22:24:36.778"></status>
+<status endtime="20190604 23:12:39.186" status="PASS" starttime="20190604 23:12:38.302"></status>
 </kw>
-<kw library="BuiltIn" name="Run Keyword If">
+<kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <arguments>
 <arg>$shool=='小学'</arg>
@@ -213,107 +220,107 @@
 <arg>$shool=='幼儿园'</arg>
 <arg>勾选幼儿园</arg>
 </arguments>
-<kw library="学校管理" name="勾选小学">
-<kw library="Selenium2Library" name="Click Element">
+<kw name="勾选小学" library="学校管理">
+<kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="add_schoolType2"]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:36.787">Clicking element 'Xpath=//*[@id="add_schoolType2"]'.</msg>
-<status starttime="20190604 22:24:36.786" status="PASS" endtime="20190604 22:24:36.902"></status>
+<msg level="INFO" timestamp="20190604 23:12:39.192">Clicking element 'Xpath=//*[@id="add_schoolType2"]'.</msg>
+<status endtime="20190604 23:12:39.314" status="PASS" starttime="20190604 23:12:39.189"></status>
 </kw>
-<status starttime="20190604 22:24:36.784" status="PASS" endtime="20190604 22:24:36.904"></status>
+<status endtime="20190604 23:12:39.315" status="PASS" starttime="20190604 23:12:39.188"></status>
 </kw>
-<status starttime="20190604 22:24:36.780" status="PASS" endtime="20190604 22:24:36.905"></status>
+<status endtime="20190604 23:12:39.316" status="PASS" starttime="20190604 23:12:39.186"></status>
 </kw>
-<kw library="学校管理" name="输入备注">
+<kw name="输入备注" library="学校管理">
 <arguments>
 <arg>${remard}</arg>
 </arguments>
-<kw library="Selenium2Library" name="Input Text">
+<kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="remark_add"]</arg>
 <arg>${text}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:36.911">Typing text '小学' into text field 'Xpath=//*[@id="remark_add"]'.</msg>
-<status starttime="20190604 22:24:36.909" status="PASS" endtime="20190604 22:24:37.288"></status>
+<msg level="INFO" timestamp="20190604 23:12:39.321">Typing text '小学' into text field 'Xpath=//*[@id="remark_add"]'.</msg>
+<status endtime="20190604 23:12:39.755" status="PASS" starttime="20190604 23:12:39.320"></status>
 </kw>
-<status starttime="20190604 22:24:36.906" status="PASS" endtime="20190604 22:24:37.289"></status>
+<status endtime="20190604 23:12:39.756" status="PASS" starttime="20190604 23:12:39.318"></status>
 </kw>
-<kw library="学校管理" name="点击提交">
-<kw library="Selenium2Library" name="Click Button">
+<kw name="点击提交" library="学校管理">
+<kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="addSchoolSubmit"]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:37.296">Clicking button 'Xpath=//*[@id="addSchoolSubmit"]'.</msg>
-<status starttime="20190604 22:24:37.295" status="PASS" endtime="20190604 22:24:37.604"></status>
+<msg level="INFO" timestamp="20190604 23:12:39.762">Clicking button 'Xpath=//*[@id="addSchoolSubmit"]'.</msg>
+<status endtime="20190604 23:12:40.043" status="PASS" starttime="20190604 23:12:39.760"></status>
 </kw>
-<status starttime="20190604 22:24:37.292" status="PASS" endtime="20190604 22:24:37.605"></status>
+<status endtime="20190604 23:12:40.045" status="PASS" starttime="20190604 23:12:39.757"></status>
 </kw>
-<kw library="学校管理" name="等待返回列表">
-<kw library="Selenium2Library" name="Wait Until Element Is Visible">
+<kw name="等待返回列表" library="学校管理">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolInfoList"]/tr[1]/td[3]</arg>
 </arguments>
-<status starttime="20190604 22:24:37.610" status="PASS" endtime="20190604 22:24:37.745"></status>
+<status endtime="20190604 23:12:40.156" status="PASS" starttime="20190604 23:12:40.049"></status>
 </kw>
-<status starttime="20190604 22:24:37.607" status="PASS" endtime="20190604 22:24:37.746"></status>
+<status endtime="20190604 23:12:40.157" status="PASS" starttime="20190604 23:12:40.046"></status>
 </kw>
-<status starttime="20190604 22:24:35.881" status="PASS" endtime="20190604 22:24:37.747"></status>
+<status endtime="20190604 23:12:40.159" status="PASS" starttime="20190604 23:12:38.069"></status>
 </kw>
-<kw library="Selenium2Library" name="Page Should Contain">
+<kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>${expected}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:37.784">Current page contains text '1559658275'.</msg>
-<status starttime="20190604 22:24:37.748" status="PASS" endtime="20190604 22:24:37.785"></status>
+<msg level="INFO" timestamp="20190604 23:12:40.197">Current page contains text '1559661158'.</msg>
+<status endtime="20190604 23:12:40.198" status="PASS" starttime="20190604 23:12:40.161"></status>
 </kw>
-<kw library="BuiltIn" name="Comment">
+<kw name="Comment" library="BuiltIn">
 <doc>Displays the given messages in the log file as keyword arguments.</doc>
 <arguments>
 <arg>删除数据</arg>
 </arguments>
-<status starttime="20190604 22:24:37.785" status="PASS" endtime="20190604 22:24:37.786"></status>
+<status endtime="20190604 23:12:40.201" status="PASS" starttime="20190604 23:12:40.200"></status>
 </kw>
-<kw library="mysql" name="执行sql">
+<kw name="执行sql" library="mysql">
 <arguments>
 <arg>DELETE from t_school_info WHERE f_school_name ="${shool}";</arg>
 </arguments>
-<kw library="DatabaseLibrary" name="Connect To Database Using Custom Params">
+<kw name="Connect To Database Using Custom Params" library="DatabaseLibrary">
 <doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to</doc>
 <arguments>
 <arg>pymysql</arg>
 <arg>database='recruit_students', user='root', password='123456', host='localhost', port=3306</arg>
 </arguments>
-<status starttime="20190604 22:24:37.788" status="PASS" endtime="20190604 22:24:38.938"></status>
+<status endtime="20190604 23:12:41.360" status="PASS" starttime="20190604 23:12:40.205"></status>
 </kw>
-<kw library="DatabaseLibrary" name="Execute Sql String">
+<kw name="Execute Sql String" library="DatabaseLibrary">
 <doc>Executes the sqlString as SQL commands.</doc>
 <arguments>
 <arg>${sql}</arg>
 </arguments>
-<status starttime="20190604 22:24:38.940" status="PASS" endtime="20190604 22:24:38.994"></status>
+<status endtime="20190604 23:12:41.421" status="PASS" starttime="20190604 23:12:41.362"></status>
 </kw>
-<kw library="DatabaseLibrary" name="Disconnect From Database">
+<kw name="Disconnect From Database" library="DatabaseLibrary">
 <doc>Disconnects from the database.</doc>
-<status starttime="20190604 22:24:38.995" status="PASS" endtime="20190604 22:24:38.996"></status>
+<status endtime="20190604 23:12:41.423" status="PASS" starttime="20190604 23:12:41.422"></status>
 </kw>
-<status starttime="20190604 22:24:37.787" status="PASS" endtime="20190604 22:24:38.996"></status>
+<status endtime="20190604 23:12:41.424" status="PASS" starttime="20190604 23:12:40.202"></status>
 </kw>
-<status starttime="20190604 22:24:35.879" status="PASS" endtime="20190604 22:24:38.997"></status>
+<status endtime="20190604 23:12:41.424" status="PASS" starttime="20190604 23:12:38.067"></status>
 </kw>
-<kw type="teardown" library="Selenium2Library" name="Reload Page">
+<kw name="Reload Page" library="Selenium2Library" type="teardown">
 <doc>Simulates user reloading page.</doc>
-<status starttime="20190604 22:24:38.998" status="PASS" endtime="20190604 22:24:39.331"></status>
+<status endtime="20190604 23:12:41.751" status="PASS" starttime="20190604 23:12:41.425"></status>
 </kw>
-<status starttime="20190604 22:24:35.872" status="PASS" critical="yes" endtime="20190604 22:24:39.332"></status>
+<status endtime="20190604 23:12:41.752" critical="yes" status="PASS" starttime="20190604 23:12:38.061"></status>
 </test>
-<test id="s1-s1-s1-s1-t2" name="新建初中">
-<kw library="BuiltIn" name="Get Time">
+<test name="新建初中" id="s1-s1-s1-s1-t2">
+<kw name="Get Time" library="BuiltIn">
 <doc>Returns the given time in the requested format.</doc>
 <arguments>
 <arg>epoch</arg>
@@ -321,10 +328,10 @@
 <assign>
 <var>${now}</var>
 </assign>
-<msg level="INFO" timestamp="20190604 22:24:39.338">${now} = 1559658279</msg>
-<status starttime="20190604 22:24:39.336" status="PASS" endtime="20190604 22:24:39.339"></status>
+<msg level="INFO" timestamp="20190604 23:12:41.757">${now} = 1559661161</msg>
+<status endtime="20190604 23:12:41.758" status="PASS" starttime="20190604 23:12:41.756"></status>
 </kw>
-<kw library="BuiltIn" name="Evaluate">
+<kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
 <arguments>
 <arg>str($now)</arg>
@@ -332,63 +339,70 @@
 <assign>
 <var>${now}</var>
 </assign>
-<msg level="INFO" timestamp="20190604 22:24:39.345">${now} = 1559658279</msg>
-<status starttime="20190604 22:24:39.341" status="PASS" endtime="20190604 22:24:39.346"></status>
+<msg level="INFO" timestamp="20190604 23:12:41.763">${now} = 1559661161</msg>
+<status endtime="20190604 23:12:41.764" status="PASS" starttime="20190604 23:12:41.760"></status>
 </kw>
-<kw library="学校管理" name="新增学校">
+<kw name="新增学校" library="学校管理">
 <arguments>
 <arg>${now}</arg>
 <arg>test1</arg>
 <arg>初中</arg>
 <arg>${now}</arg>
 </arguments>
-<kw library="学校管理" name="新增学校页面">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>${shool}:学校名称，${type}：学校类型，${remard}：备注，${expected}：期望值</arg>
+</arguments>
+<status endtime="20190604 23:12:41.768" status="PASS" starttime="20190604 23:12:41.766"></status>
+</kw>
+<kw name="新增学校页面" library="学校管理">
 <arguments>
 <arg>${shool}</arg>
 <arg>${type}</arg>
 <arg>${remard}</arg>
 </arguments>
-<kw library="学校管理" name="点击新建学校">
-<kw library="Selenium2Library" name="Wait Until Element Is Enabled">
+<kw name="点击新建学校" library="学校管理">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until element ``locator`` is enabled.</doc>
 <arguments>
 <arg>xpath=//*[@id="sour"]/div[4]/button[1]</arg>
 </arguments>
-<status starttime="20190604 22:24:39.352" status="PASS" endtime="20190604 22:24:39.392"></status>
+<status endtime="20190604 23:12:41.861" status="PASS" starttime="20190604 23:12:41.772"></status>
 </kw>
-<kw library="Selenium2Library" name="Click Button">
+<kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="sour"]/div[4]/button[1]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:39.394">Clicking button 'xpath=//*[@id="sour"]/div[4]/button[1]'.</msg>
-<status starttime="20190604 22:24:39.393" status="PASS" endtime="20190604 22:24:39.525"></status>
+<msg level="INFO" timestamp="20190604 23:12:41.864">Clicking button 'xpath=//*[@id="sour"]/div[4]/button[1]'.</msg>
+<status endtime="20190604 23:12:42.025" status="PASS" starttime="20190604 23:12:41.862"></status>
 </kw>
-<status starttime="20190604 22:24:39.351" status="PASS" endtime="20190604 22:24:39.526"></status>
+<status endtime="20190604 23:12:42.027" status="PASS" starttime="20190604 23:12:41.771"></status>
 </kw>
-<kw library="学校管理" name="输入学校名称">
+<kw name="输入学校名称" library="学校管理">
 <arguments>
 <arg>${shool_name}</arg>
 </arguments>
-<kw library="Selenium2Library" name="Wait Until Element Is Visible">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolName_add"]</arg>
 </arguments>
-<status starttime="20190604 22:24:39.530" status="PASS" endtime="20190604 22:24:39.803"></status>
+<status endtime="20190604 23:12:42.310" status="PASS" starttime="20190604 23:12:42.030"></status>
 </kw>
-<kw library="Selenium2Library" name="Input Text">
+<kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolName_add"]</arg>
 <arg>${text}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:39.805">Typing text '1559658279' into text field 'Xpath=//*[@id="schoolName_add"]'.</msg>
-<status starttime="20190604 22:24:39.804" status="PASS" endtime="20190604 22:24:40.163"></status>
+<msg level="INFO" timestamp="20190604 23:12:42.313">Typing text '1559661161' into text field 'Xpath=//*[@id="schoolName_add"]'.</msg>
+<status endtime="20190604 23:12:42.689" status="PASS" starttime="20190604 23:12:42.311"></status>
 </kw>
-<status starttime="20190604 22:24:39.528" status="PASS" endtime="20190604 22:24:40.165"></status>
+<status endtime="20190604 23:12:42.690" status="PASS" starttime="20190604 23:12:42.028"></status>
 </kw>
-<kw library="BuiltIn" name="Run Keyword If">
+<kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <arguments>
 <arg>$shool=='小学'</arg>
@@ -403,108 +417,107 @@
 <arg>$shool=='幼儿园'</arg>
 <arg>勾选幼儿园</arg>
 </arguments>
-<kw library="学校管理" name="勾选初中">
-<kw library="Selenium2Library" name="Click Element">
+<kw name="勾选初中" library="学校管理">
+<kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="add_schoolType3"]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:40.171">Clicking element 'Xpath=//*[@id="add_schoolType3"]'.</msg>
-<status starttime="20190604 22:24:40.171" status="PASS" endtime="20190604 22:24:40.305"></status>
+<msg level="INFO" timestamp="20190604 23:12:42.701">Clicking element 'Xpath=//*[@id="add_schoolType3"]'.</msg>
+<status endtime="20190604 23:12:42.844" status="PASS" starttime="20190604 23:12:42.700"></status>
 </kw>
-<status starttime="20190604 22:24:40.170" status="PASS" endtime="20190604 22:24:40.307"></status>
+<status endtime="20190604 23:12:42.845" status="PASS" starttime="20190604 23:12:42.698"></status>
 </kw>
-<status starttime="20190604 22:24:40.166" status="PASS" endtime="20190604 22:24:40.309"></status>
+<status endtime="20190604 23:12:42.846" status="PASS" starttime="20190604 23:12:42.692"></status>
 </kw>
-<kw library="学校管理" name="输入备注">
+<kw name="输入备注" library="学校管理">
 <arguments>
 <arg>${remard}</arg>
 </arguments>
-<kw library="Selenium2Library" name="Input Text">
+<kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="remark_add"]</arg>
 <arg>${text}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:40.314">Typing text 'test1' into text field 'Xpath=//*[@id="remark_add"]'.</msg>
-<status starttime="20190604 22:24:40.312" status="PASS" endtime="20190604 22:24:40.644"></status>
+<msg level="INFO" timestamp="20190604 23:12:42.851">Typing text 'test1' into text field 'Xpath=//*[@id="remark_add"]'.</msg>
+<status endtime="20190604 23:12:43.241" status="PASS" starttime="20190604 23:12:42.850"></status>
 </kw>
-<status starttime="20190604 22:24:40.310" status="PASS" endtime="20190604 22:24:40.645"></status>
+<status endtime="20190604 23:12:43.244" status="PASS" starttime="20190604 23:12:42.847"></status>
 </kw>
-<kw library="学校管理" name="点击提交">
-<kw library="Selenium2Library" name="Click Button">
+<kw name="点击提交" library="学校管理">
+<kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="addSchoolSubmit"]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:40.650">Clicking button 'Xpath=//*[@id="addSchoolSubmit"]'.</msg>
-<status starttime="20190604 22:24:40.648" status="PASS" endtime="20190604 22:24:40.858"></status>
+<msg level="INFO" timestamp="20190604 23:12:43.248">Clicking button 'Xpath=//*[@id="addSchoolSubmit"]'.</msg>
+<status endtime="20190604 23:12:43.537" status="PASS" starttime="20190604 23:12:43.247"></status>
 </kw>
-<status starttime="20190604 22:24:40.646" status="PASS" endtime="20190604 22:24:40.860"></status>
+<status endtime="20190604 23:12:43.539" status="PASS" starttime="20190604 23:12:43.245"></status>
 </kw>
-<kw library="学校管理" name="等待返回列表">
-<kw library="Selenium2Library" name="Wait Until Element Is Visible">
+<kw name="等待返回列表" library="学校管理">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolInfoList"]/tr[1]/td[3]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:40.957">Suppressing StaleElementReferenceException from Selenium.</msg>
-<status starttime="20190604 22:24:40.863" status="PASS" endtime="20190604 22:24:41.222"></status>
+<status endtime="20190604 23:12:43.705" status="PASS" starttime="20190604 23:12:43.545"></status>
 </kw>
-<status starttime="20190604 22:24:40.861" status="PASS" endtime="20190604 22:24:41.223"></status>
+<status endtime="20190604 23:12:43.706" status="PASS" starttime="20190604 23:12:43.541"></status>
 </kw>
-<status starttime="20190604 22:24:39.350" status="PASS" endtime="20190604 22:24:41.225"></status>
+<status endtime="20190604 23:12:43.706" status="PASS" starttime="20190604 23:12:41.769"></status>
 </kw>
-<kw library="Selenium2Library" name="Page Should Contain">
+<kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>${expected}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:41.267">Current page contains text '1559658279'.</msg>
-<status starttime="20190604 22:24:41.226" status="PASS" endtime="20190604 22:24:41.267"></status>
+<msg level="INFO" timestamp="20190604 23:12:43.740">Current page contains text '1559661161'.</msg>
+<status endtime="20190604 23:12:43.741" status="PASS" starttime="20190604 23:12:43.707"></status>
 </kw>
-<kw library="BuiltIn" name="Comment">
+<kw name="Comment" library="BuiltIn">
 <doc>Displays the given messages in the log file as keyword arguments.</doc>
 <arguments>
 <arg>删除数据</arg>
 </arguments>
-<status starttime="20190604 22:24:41.268" status="PASS" endtime="20190604 22:24:41.269"></status>
+<status endtime="20190604 23:12:43.745" status="PASS" starttime="20190604 23:12:43.744"></status>
 </kw>
-<kw library="mysql" name="执行sql">
+<kw name="执行sql" library="mysql">
 <arguments>
 <arg>DELETE from t_school_info WHERE f_school_name ="${shool}";</arg>
 </arguments>
-<kw library="DatabaseLibrary" name="Connect To Database Using Custom Params">
+<kw name="Connect To Database Using Custom Params" library="DatabaseLibrary">
 <doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to</doc>
 <arguments>
 <arg>pymysql</arg>
 <arg>database='recruit_students', user='root', password='123456', host='localhost', port=3306</arg>
 </arguments>
-<status starttime="20190604 22:24:41.270" status="PASS" endtime="20190604 22:24:42.276"></status>
+<status endtime="20190604 23:12:44.755" status="PASS" starttime="20190604 23:12:43.747"></status>
 </kw>
-<kw library="DatabaseLibrary" name="Execute Sql String">
+<kw name="Execute Sql String" library="DatabaseLibrary">
 <doc>Executes the sqlString as SQL commands.</doc>
 <arguments>
 <arg>${sql}</arg>
 </arguments>
-<status starttime="20190604 22:24:42.277" status="PASS" endtime="20190604 22:24:42.319"></status>
+<status endtime="20190604 23:12:44.801" status="PASS" starttime="20190604 23:12:44.756"></status>
 </kw>
-<kw library="DatabaseLibrary" name="Disconnect From Database">
+<kw name="Disconnect From Database" library="DatabaseLibrary">
 <doc>Disconnects from the database.</doc>
-<status starttime="20190604 22:24:42.320" status="PASS" endtime="20190604 22:24:42.321"></status>
+<status endtime="20190604 23:12:44.803" status="PASS" starttime="20190604 23:12:44.802"></status>
 </kw>
-<status starttime="20190604 22:24:41.269" status="PASS" endtime="20190604 22:24:42.321"></status>
+<status endtime="20190604 23:12:44.804" status="PASS" starttime="20190604 23:12:43.746"></status>
 </kw>
-<status starttime="20190604 22:24:39.347" status="PASS" endtime="20190604 22:24:42.322"></status>
+<status endtime="20190604 23:12:44.804" status="PASS" starttime="20190604 23:12:41.765"></status>
 </kw>
-<kw type="teardown" library="Selenium2Library" name="Reload Page">
+<kw name="Reload Page" library="Selenium2Library" type="teardown">
 <doc>Simulates user reloading page.</doc>
-<status starttime="20190604 22:24:42.322" status="PASS" endtime="20190604 22:24:42.608"></status>
+<status endtime="20190604 23:12:45.083" status="PASS" starttime="20190604 23:12:44.805"></status>
 </kw>
-<status starttime="20190604 22:24:39.334" status="PASS" critical="yes" endtime="20190604 22:24:42.609"></status>
+<status endtime="20190604 23:12:45.084" critical="yes" status="PASS" starttime="20190604 23:12:41.753"></status>
 </test>
-<test id="s1-s1-s1-s1-t3" name="新建高中">
-<kw library="BuiltIn" name="Get Time">
+<test name="新建高中" id="s1-s1-s1-s1-t3">
+<kw name="Get Time" library="BuiltIn">
 <doc>Returns the given time in the requested format.</doc>
 <arguments>
 <arg>epoch</arg>
@@ -512,10 +525,10 @@
 <assign>
 <var>${now}</var>
 </assign>
-<msg level="INFO" timestamp="20190604 22:24:42.616">${now} = 1559658282</msg>
-<status starttime="20190604 22:24:42.615" status="PASS" endtime="20190604 22:24:42.617"></status>
+<msg level="INFO" timestamp="20190604 23:12:45.090">${now} = 1559661165</msg>
+<status endtime="20190604 23:12:45.091" status="PASS" starttime="20190604 23:12:45.089"></status>
 </kw>
-<kw library="BuiltIn" name="Evaluate">
+<kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
 <arguments>
 <arg>str($now)</arg>
@@ -523,63 +536,70 @@
 <assign>
 <var>${now}</var>
 </assign>
-<msg level="INFO" timestamp="20190604 22:24:42.621">${now} = 1559658282</msg>
-<status starttime="20190604 22:24:42.618" status="PASS" endtime="20190604 22:24:42.621"></status>
+<msg level="INFO" timestamp="20190604 23:12:45.096">${now} = 1559661165</msg>
+<status endtime="20190604 23:12:45.097" status="PASS" starttime="20190604 23:12:45.093"></status>
 </kw>
-<kw library="学校管理" name="新增学校">
+<kw name="新增学校" library="学校管理">
 <arguments>
 <arg>${now}</arg>
 <arg>test1</arg>
 <arg>高中</arg>
 <arg>${now}</arg>
 </arguments>
-<kw library="学校管理" name="新增学校页面">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>${shool}:学校名称，${type}：学校类型，${remard}：备注，${expected}：期望值</arg>
+</arguments>
+<status endtime="20190604 23:12:45.102" status="PASS" starttime="20190604 23:12:45.100"></status>
+</kw>
+<kw name="新增学校页面" library="学校管理">
 <arguments>
 <arg>${shool}</arg>
 <arg>${type}</arg>
 <arg>${remard}</arg>
 </arguments>
-<kw library="学校管理" name="点击新建学校">
-<kw library="Selenium2Library" name="Wait Until Element Is Enabled">
+<kw name="点击新建学校" library="学校管理">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until element ``locator`` is enabled.</doc>
 <arguments>
 <arg>xpath=//*[@id="sour"]/div[4]/button[1]</arg>
 </arguments>
-<status starttime="20190604 22:24:42.628" status="PASS" endtime="20190604 22:24:42.681"></status>
+<status endtime="20190604 23:12:45.164" status="PASS" starttime="20190604 23:12:45.106"></status>
 </kw>
-<kw library="Selenium2Library" name="Click Button">
+<kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="sour"]/div[4]/button[1]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:42.682">Clicking button 'xpath=//*[@id="sour"]/div[4]/button[1]'.</msg>
-<status starttime="20190604 22:24:42.682" status="PASS" endtime="20190604 22:24:42.836"></status>
+<msg level="INFO" timestamp="20190604 23:12:45.167">Clicking button 'xpath=//*[@id="sour"]/div[4]/button[1]'.</msg>
+<status endtime="20190604 23:12:45.308" status="PASS" starttime="20190604 23:12:45.165"></status>
 </kw>
-<status starttime="20190604 22:24:42.627" status="PASS" endtime="20190604 22:24:42.837"></status>
+<status endtime="20190604 23:12:45.310" status="PASS" starttime="20190604 23:12:45.104"></status>
 </kw>
-<kw library="学校管理" name="输入学校名称">
+<kw name="输入学校名称" library="学校管理">
 <arguments>
 <arg>${shool_name}</arg>
 </arguments>
-<kw library="Selenium2Library" name="Wait Until Element Is Visible">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolName_add"]</arg>
 </arguments>
-<status starttime="20190604 22:24:42.839" status="PASS" endtime="20190604 22:24:43.114"></status>
+<status endtime="20190604 23:12:45.588" status="PASS" starttime="20190604 23:12:45.313"></status>
 </kw>
-<kw library="Selenium2Library" name="Input Text">
+<kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolName_add"]</arg>
 <arg>${text}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:43.115">Typing text '1559658282' into text field 'Xpath=//*[@id="schoolName_add"]'.</msg>
-<status starttime="20190604 22:24:43.115" status="PASS" endtime="20190604 22:24:43.536"></status>
+<msg level="INFO" timestamp="20190604 23:12:45.589">Typing text '1559661165' into text field 'Xpath=//*[@id="schoolName_add"]'.</msg>
+<status endtime="20190604 23:12:45.958" status="PASS" starttime="20190604 23:12:45.589"></status>
 </kw>
-<status starttime="20190604 22:24:42.838" status="PASS" endtime="20190604 22:24:43.537"></status>
+<status endtime="20190604 23:12:45.960" status="PASS" starttime="20190604 23:12:45.311"></status>
 </kw>
-<kw library="BuiltIn" name="Run Keyword If">
+<kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <arguments>
 <arg>$shool=='小学'</arg>
@@ -594,107 +614,107 @@
 <arg>$shool=='幼儿园'</arg>
 <arg>勾选幼儿园</arg>
 </arguments>
-<kw library="学校管理" name="勾选高中">
-<kw library="Selenium2Library" name="Click Element">
+<kw name="勾选高中" library="学校管理">
+<kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="add_schoolType4"]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:43.546">Clicking element 'Xpath=//*[@id="add_schoolType4"]'.</msg>
-<status starttime="20190604 22:24:43.545" status="PASS" endtime="20190604 22:24:43.651"></status>
+<msg level="INFO" timestamp="20190604 23:12:45.971">Clicking element 'Xpath=//*[@id="add_schoolType4"]'.</msg>
+<status endtime="20190604 23:12:46.083" status="PASS" starttime="20190604 23:12:45.970"></status>
 </kw>
-<status starttime="20190604 22:24:43.544" status="PASS" endtime="20190604 22:24:43.653"></status>
+<status endtime="20190604 23:12:46.085" status="PASS" starttime="20190604 23:12:45.968"></status>
 </kw>
-<status starttime="20190604 22:24:43.538" status="PASS" endtime="20190604 22:24:43.654"></status>
+<status endtime="20190604 23:12:46.086" status="PASS" starttime="20190604 23:12:45.961"></status>
 </kw>
-<kw library="学校管理" name="输入备注">
+<kw name="输入备注" library="学校管理">
 <arguments>
 <arg>${remard}</arg>
 </arguments>
-<kw library="Selenium2Library" name="Input Text">
+<kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="remark_add"]</arg>
 <arg>${text}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:43.660">Typing text 'test1' into text field 'Xpath=//*[@id="remark_add"]'.</msg>
-<status starttime="20190604 22:24:43.657" status="PASS" endtime="20190604 22:24:43.962"></status>
+<msg level="INFO" timestamp="20190604 23:12:46.091">Typing text 'test1' into text field 'Xpath=//*[@id="remark_add"]'.</msg>
+<status endtime="20190604 23:12:46.444" status="PASS" starttime="20190604 23:12:46.090"></status>
 </kw>
-<status starttime="20190604 22:24:43.655" status="PASS" endtime="20190604 22:24:43.964"></status>
+<status endtime="20190604 23:12:46.445" status="PASS" starttime="20190604 23:12:46.088"></status>
 </kw>
-<kw library="学校管理" name="点击提交">
-<kw library="Selenium2Library" name="Click Button">
+<kw name="点击提交" library="学校管理">
+<kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="addSchoolSubmit"]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:43.969">Clicking button 'Xpath=//*[@id="addSchoolSubmit"]'.</msg>
-<status starttime="20190604 22:24:43.967" status="PASS" endtime="20190604 22:24:44.206"></status>
+<msg level="INFO" timestamp="20190604 23:12:46.449">Clicking button 'Xpath=//*[@id="addSchoolSubmit"]'.</msg>
+<status endtime="20190604 23:12:46.703" status="PASS" starttime="20190604 23:12:46.448"></status>
 </kw>
-<status starttime="20190604 22:24:43.965" status="PASS" endtime="20190604 22:24:44.207"></status>
+<status endtime="20190604 23:12:46.704" status="PASS" starttime="20190604 23:12:46.446"></status>
 </kw>
-<kw library="学校管理" name="等待返回列表">
-<kw library="Selenium2Library" name="Wait Until Element Is Visible">
+<kw name="等待返回列表" library="学校管理">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolInfoList"]/tr[1]/td[3]</arg>
 </arguments>
-<status starttime="20190604 22:24:44.212" status="PASS" endtime="20190604 22:24:44.337"></status>
+<status endtime="20190604 23:12:46.807" status="PASS" starttime="20190604 23:12:46.708"></status>
 </kw>
-<status starttime="20190604 22:24:44.210" status="PASS" endtime="20190604 22:24:44.338"></status>
+<status endtime="20190604 23:12:46.809" status="PASS" starttime="20190604 23:12:46.706"></status>
 </kw>
-<status starttime="20190604 22:24:42.625" status="PASS" endtime="20190604 22:24:44.339"></status>
+<status endtime="20190604 23:12:46.811" status="PASS" starttime="20190604 23:12:45.103"></status>
 </kw>
-<kw library="Selenium2Library" name="Page Should Contain">
+<kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>${expected}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:44.374">Current page contains text '1559658282'.</msg>
-<status starttime="20190604 22:24:44.340" status="PASS" endtime="20190604 22:24:44.377"></status>
+<msg level="INFO" timestamp="20190604 23:12:46.861">Current page contains text '1559661165'.</msg>
+<status endtime="20190604 23:12:46.862" status="PASS" starttime="20190604 23:12:46.812"></status>
 </kw>
-<kw library="BuiltIn" name="Comment">
+<kw name="Comment" library="BuiltIn">
 <doc>Displays the given messages in the log file as keyword arguments.</doc>
 <arguments>
 <arg>删除数据</arg>
 </arguments>
-<status starttime="20190604 22:24:44.378" status="PASS" endtime="20190604 22:24:44.380"></status>
+<status endtime="20190604 23:12:46.864" status="PASS" starttime="20190604 23:12:46.863"></status>
 </kw>
-<kw library="mysql" name="执行sql">
+<kw name="执行sql" library="mysql">
 <arguments>
 <arg>DELETE from t_school_info WHERE f_school_name ="${shool}";</arg>
 </arguments>
-<kw library="DatabaseLibrary" name="Connect To Database Using Custom Params">
+<kw name="Connect To Database Using Custom Params" library="DatabaseLibrary">
 <doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to</doc>
 <arguments>
 <arg>pymysql</arg>
 <arg>database='recruit_students', user='root', password='123456', host='localhost', port=3306</arg>
 </arguments>
-<status starttime="20190604 22:24:44.383" status="PASS" endtime="20190604 22:24:45.395"></status>
+<status endtime="20190604 23:12:47.873" status="PASS" starttime="20190604 23:12:46.865"></status>
 </kw>
-<kw library="DatabaseLibrary" name="Execute Sql String">
+<kw name="Execute Sql String" library="DatabaseLibrary">
 <doc>Executes the sqlString as SQL commands.</doc>
 <arguments>
 <arg>${sql}</arg>
 </arguments>
-<status starttime="20190604 22:24:45.395" status="PASS" endtime="20190604 22:24:45.449"></status>
+<status endtime="20190604 23:12:47.919" status="PASS" starttime="20190604 23:12:47.874"></status>
 </kw>
-<kw library="DatabaseLibrary" name="Disconnect From Database">
+<kw name="Disconnect From Database" library="DatabaseLibrary">
 <doc>Disconnects from the database.</doc>
-<status starttime="20190604 22:24:45.450" status="PASS" endtime="20190604 22:24:45.452"></status>
+<status endtime="20190604 23:12:47.921" status="PASS" starttime="20190604 23:12:47.920"></status>
 </kw>
-<status starttime="20190604 22:24:44.381" status="PASS" endtime="20190604 22:24:45.453"></status>
+<status endtime="20190604 23:12:47.922" status="PASS" starttime="20190604 23:12:46.864"></status>
 </kw>
-<status starttime="20190604 22:24:42.622" status="PASS" endtime="20190604 22:24:45.455"></status>
+<status endtime="20190604 23:12:47.923" status="PASS" starttime="20190604 23:12:45.098"></status>
 </kw>
-<kw type="teardown" library="Selenium2Library" name="Reload Page">
+<kw name="Reload Page" library="Selenium2Library" type="teardown">
 <doc>Simulates user reloading page.</doc>
-<status starttime="20190604 22:24:45.456" status="PASS" endtime="20190604 22:24:45.737"></status>
+<status endtime="20190604 23:12:48.198" status="PASS" starttime="20190604 23:12:47.924"></status>
 </kw>
-<status starttime="20190604 22:24:42.612" status="PASS" critical="yes" endtime="20190604 22:24:45.738"></status>
+<status endtime="20190604 23:12:48.199" critical="yes" status="PASS" starttime="20190604 23:12:45.086"></status>
 </test>
-<test id="s1-s1-s1-s1-t4" name="新建幼儿园">
-<kw library="BuiltIn" name="Get Time">
+<test name="新建幼儿园" id="s1-s1-s1-s1-t4">
+<kw name="Get Time" library="BuiltIn">
 <doc>Returns the given time in the requested format.</doc>
 <arguments>
 <arg>epoch</arg>
@@ -702,10 +722,10 @@
 <assign>
 <var>${now}</var>
 </assign>
-<msg level="INFO" timestamp="20190604 22:24:45.746">${now} = 1559658285</msg>
-<status starttime="20190604 22:24:45.743" status="PASS" endtime="20190604 22:24:45.746"></status>
+<msg level="INFO" timestamp="20190604 23:12:48.205">${now} = 1559661168</msg>
+<status endtime="20190604 23:12:48.206" status="PASS" starttime="20190604 23:12:48.204"></status>
 </kw>
-<kw library="BuiltIn" name="Evaluate">
+<kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
 <arguments>
 <arg>str($now)</arg>
@@ -713,63 +733,70 @@
 <assign>
 <var>${now}</var>
 </assign>
-<msg level="INFO" timestamp="20190604 22:24:45.750">${now} = 1559658285</msg>
-<status starttime="20190604 22:24:45.747" status="PASS" endtime="20190604 22:24:45.750"></status>
+<msg level="INFO" timestamp="20190604 23:12:48.211">${now} = 1559661168</msg>
+<status endtime="20190604 23:12:48.213" status="PASS" starttime="20190604 23:12:48.207"></status>
 </kw>
-<kw library="学校管理" name="新增学校">
+<kw name="新增学校" library="学校管理">
 <arguments>
 <arg>${now}</arg>
 <arg>test1</arg>
 <arg>幼儿园</arg>
 <arg>${now}</arg>
 </arguments>
-<kw library="学校管理" name="新增学校页面">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>${shool}:学校名称，${type}：学校类型，${remard}：备注，${expected}：期望值</arg>
+</arguments>
+<status endtime="20190604 23:12:48.218" status="PASS" starttime="20190604 23:12:48.217"></status>
+</kw>
+<kw name="新增学校页面" library="学校管理">
 <arguments>
 <arg>${shool}</arg>
 <arg>${type}</arg>
 <arg>${remard}</arg>
 </arguments>
-<kw library="学校管理" name="点击新建学校">
-<kw library="Selenium2Library" name="Wait Until Element Is Enabled">
+<kw name="点击新建学校" library="学校管理">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until element ``locator`` is enabled.</doc>
 <arguments>
 <arg>xpath=//*[@id="sour"]/div[4]/button[1]</arg>
 </arguments>
-<status starttime="20190604 22:24:45.756" status="PASS" endtime="20190604 22:24:45.798"></status>
+<status endtime="20190604 23:12:48.265" status="PASS" starttime="20190604 23:12:48.222"></status>
 </kw>
-<kw library="Selenium2Library" name="Click Button">
+<kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="sour"]/div[4]/button[1]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:45.800">Clicking button 'xpath=//*[@id="sour"]/div[4]/button[1]'.</msg>
-<status starttime="20190604 22:24:45.799" status="PASS" endtime="20190604 22:24:45.922"></status>
+<msg level="INFO" timestamp="20190604 23:12:48.267">Clicking button 'xpath=//*[@id="sour"]/div[4]/button[1]'.</msg>
+<status endtime="20190604 23:12:48.387" status="PASS" starttime="20190604 23:12:48.266"></status>
 </kw>
-<status starttime="20190604 22:24:45.755" status="PASS" endtime="20190604 22:24:45.923"></status>
+<status endtime="20190604 23:12:48.389" status="PASS" starttime="20190604 23:12:48.221"></status>
 </kw>
-<kw library="学校管理" name="输入学校名称">
+<kw name="输入学校名称" library="学校管理">
 <arguments>
 <arg>${shool_name}</arg>
 </arguments>
-<kw library="Selenium2Library" name="Wait Until Element Is Visible">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolName_add"]</arg>
 </arguments>
-<status starttime="20190604 22:24:45.927" status="PASS" endtime="20190604 22:24:46.203"></status>
+<status endtime="20190604 23:12:48.669" status="PASS" starttime="20190604 23:12:48.391"></status>
 </kw>
-<kw library="Selenium2Library" name="Input Text">
+<kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolName_add"]</arg>
 <arg>${text}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:46.205">Typing text '1559658285' into text field 'Xpath=//*[@id="schoolName_add"]'.</msg>
-<status starttime="20190604 22:24:46.204" status="PASS" endtime="20190604 22:24:46.587"></status>
+<msg level="INFO" timestamp="20190604 23:12:48.671">Typing text '1559661168' into text field 'Xpath=//*[@id="schoolName_add"]'.</msg>
+<status endtime="20190604 23:12:49.090" status="PASS" starttime="20190604 23:12:48.670"></status>
 </kw>
-<status starttime="20190604 22:24:45.924" status="PASS" endtime="20190604 22:24:46.588"></status>
+<status endtime="20190604 23:12:49.091" status="PASS" starttime="20190604 23:12:48.390"></status>
 </kw>
-<kw library="BuiltIn" name="Run Keyword If">
+<kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <arguments>
 <arg>$shool=='小学'</arg>
@@ -784,108 +811,107 @@
 <arg>$shool=='幼儿园'</arg>
 <arg>勾选幼儿园</arg>
 </arguments>
-<kw library="学校管理" name="勾选幼儿园">
-<kw library="Selenium2Library" name="Click Element">
+<kw name="勾选幼儿园" library="学校管理">
+<kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="add_schoolType1"]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:46.606">Clicking element 'Xpath=//*[@id="add_schoolType1"]'.</msg>
-<status starttime="20190604 22:24:46.604" status="PASS" endtime="20190604 22:24:46.710"></status>
+<msg level="INFO" timestamp="20190604 23:12:49.100">Clicking element 'Xpath=//*[@id="add_schoolType1"]'.</msg>
+<status endtime="20190604 23:12:49.201" status="PASS" starttime="20190604 23:12:49.100"></status>
 </kw>
-<status starttime="20190604 22:24:46.602" status="PASS" endtime="20190604 22:24:46.712"></status>
+<status endtime="20190604 23:12:49.203" status="PASS" starttime="20190604 23:12:49.099"></status>
 </kw>
-<status starttime="20190604 22:24:46.590" status="PASS" endtime="20190604 22:24:46.713"></status>
+<status endtime="20190604 23:12:49.204" status="PASS" starttime="20190604 23:12:49.092"></status>
 </kw>
-<kw library="学校管理" name="输入备注">
+<kw name="输入备注" library="学校管理">
 <arguments>
 <arg>${remard}</arg>
 </arguments>
-<kw library="Selenium2Library" name="Input Text">
+<kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="remark_add"]</arg>
 <arg>${text}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:46.717">Typing text 'test1' into text field 'Xpath=//*[@id="remark_add"]'.</msg>
-<status starttime="20190604 22:24:46.716" status="PASS" endtime="20190604 22:24:47.028"></status>
+<msg level="INFO" timestamp="20190604 23:12:49.210">Typing text 'test1' into text field 'Xpath=//*[@id="remark_add"]'.</msg>
+<status endtime="20190604 23:12:49.536" status="PASS" starttime="20190604 23:12:49.209"></status>
 </kw>
-<status starttime="20190604 22:24:46.714" status="PASS" endtime="20190604 22:24:47.029"></status>
+<status endtime="20190604 23:12:49.537" status="PASS" starttime="20190604 23:12:49.206"></status>
 </kw>
-<kw library="学校管理" name="点击提交">
-<kw library="Selenium2Library" name="Click Button">
+<kw name="点击提交" library="学校管理">
+<kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="addSchoolSubmit"]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:47.032">Clicking button 'Xpath=//*[@id="addSchoolSubmit"]'.</msg>
-<status starttime="20190604 22:24:47.031" status="PASS" endtime="20190604 22:24:47.307"></status>
+<msg level="INFO" timestamp="20190604 23:12:49.540">Clicking button 'Xpath=//*[@id="addSchoolSubmit"]'.</msg>
+<status endtime="20190604 23:12:49.828" status="PASS" starttime="20190604 23:12:49.539"></status>
 </kw>
-<status starttime="20190604 22:24:47.030" status="PASS" endtime="20190604 22:24:47.311"></status>
+<status endtime="20190604 23:12:49.830" status="PASS" starttime="20190604 23:12:49.538"></status>
 </kw>
-<kw library="学校管理" name="等待返回列表">
-<kw library="Selenium2Library" name="Wait Until Element Is Visible">
+<kw name="等待返回列表" library="学校管理">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolInfoList"]/tr[1]/td[3]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:47.435">Suppressing StaleElementReferenceException from Selenium.</msg>
-<status starttime="20190604 22:24:47.313" status="PASS" endtime="20190604 22:24:47.678"></status>
+<status endtime="20190604 23:12:49.938" status="PASS" starttime="20190604 23:12:49.834"></status>
 </kw>
-<status starttime="20190604 22:24:47.312" status="PASS" endtime="20190604 22:24:47.679"></status>
+<status endtime="20190604 23:12:49.939" status="PASS" starttime="20190604 23:12:49.831"></status>
 </kw>
-<status starttime="20190604 22:24:45.753" status="PASS" endtime="20190604 22:24:47.680"></status>
+<status endtime="20190604 23:12:49.940" status="PASS" starttime="20190604 23:12:48.219"></status>
 </kw>
-<kw library="Selenium2Library" name="Page Should Contain">
+<kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>${expected}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:47.711">Current page contains text '1559658285'.</msg>
-<status starttime="20190604 22:24:47.680" status="PASS" endtime="20190604 22:24:47.711"></status>
+<msg level="INFO" timestamp="20190604 23:12:49.982">Current page contains text '1559661168'.</msg>
+<status endtime="20190604 23:12:49.983" status="PASS" starttime="20190604 23:12:49.942"></status>
 </kw>
-<kw library="BuiltIn" name="Comment">
+<kw name="Comment" library="BuiltIn">
 <doc>Displays the given messages in the log file as keyword arguments.</doc>
 <arguments>
 <arg>删除数据</arg>
 </arguments>
-<status starttime="20190604 22:24:47.712" status="PASS" endtime="20190604 22:24:47.712"></status>
+<status endtime="20190604 23:12:49.985" status="PASS" starttime="20190604 23:12:49.984"></status>
 </kw>
-<kw library="mysql" name="执行sql">
+<kw name="执行sql" library="mysql">
 <arguments>
 <arg>DELETE from t_school_info WHERE f_school_name ="${shool}";</arg>
 </arguments>
-<kw library="DatabaseLibrary" name="Connect To Database Using Custom Params">
+<kw name="Connect To Database Using Custom Params" library="DatabaseLibrary">
 <doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to</doc>
 <arguments>
 <arg>pymysql</arg>
 <arg>database='recruit_students', user='root', password='123456', host='localhost', port=3306</arg>
 </arguments>
-<status starttime="20190604 22:24:47.714" status="PASS" endtime="20190604 22:24:48.721"></status>
+<status endtime="20190604 23:12:50.996" status="PASS" starttime="20190604 23:12:49.988"></status>
 </kw>
-<kw library="DatabaseLibrary" name="Execute Sql String">
+<kw name="Execute Sql String" library="DatabaseLibrary">
 <doc>Executes the sqlString as SQL commands.</doc>
 <arguments>
 <arg>${sql}</arg>
 </arguments>
-<status starttime="20190604 22:24:48.722" status="PASS" endtime="20190604 22:24:48.777"></status>
+<status endtime="20190604 23:12:51.048" status="PASS" starttime="20190604 23:12:50.997"></status>
 </kw>
-<kw library="DatabaseLibrary" name="Disconnect From Database">
+<kw name="Disconnect From Database" library="DatabaseLibrary">
 <doc>Disconnects from the database.</doc>
-<status starttime="20190604 22:24:48.778" status="PASS" endtime="20190604 22:24:48.779"></status>
+<status endtime="20190604 23:12:51.050" status="PASS" starttime="20190604 23:12:51.049"></status>
 </kw>
-<status starttime="20190604 22:24:47.713" status="PASS" endtime="20190604 22:24:48.780"></status>
+<status endtime="20190604 23:12:51.051" status="PASS" starttime="20190604 23:12:49.986"></status>
 </kw>
-<status starttime="20190604 22:24:45.751" status="PASS" endtime="20190604 22:24:48.780"></status>
+<status endtime="20190604 23:12:51.052" status="PASS" starttime="20190604 23:12:48.215"></status>
 </kw>
-<kw type="teardown" library="Selenium2Library" name="Reload Page">
+<kw name="Reload Page" library="Selenium2Library" type="teardown">
 <doc>Simulates user reloading page.</doc>
-<status starttime="20190604 22:24:48.781" status="PASS" endtime="20190604 22:24:49.044"></status>
+<status endtime="20190604 23:12:51.326" status="PASS" starttime="20190604 23:12:51.053"></status>
 </kw>
-<status starttime="20190604 22:24:45.740" status="PASS" critical="yes" endtime="20190604 22:24:49.045"></status>
+<status endtime="20190604 23:12:51.329" critical="yes" status="PASS" starttime="20190604 23:12:48.201"></status>
 </test>
-<test id="s1-s1-s1-s1-t5" name="招生录取时间设置">
-<kw library="BuiltIn" name="Get Time">
+<test name="招生录取时间设置" id="s1-s1-s1-s1-t5">
+<kw name="Get Time" library="BuiltIn">
 <doc>Returns the given time in the requested format.</doc>
 <arguments>
 <arg>epoch</arg>
@@ -893,10 +919,10 @@
 <assign>
 <var>${now}</var>
 </assign>
-<msg level="INFO" timestamp="20190604 22:24:49.053">${now} = 1559658289</msg>
-<status starttime="20190604 22:24:49.052" status="PASS" endtime="20190604 22:24:49.053"></status>
+<msg level="INFO" timestamp="20190604 23:12:51.339">${now} = 1559661171</msg>
+<status endtime="20190604 23:12:51.340" status="PASS" starttime="20190604 23:12:51.337"></status>
 </kw>
-<kw library="BuiltIn" name="Evaluate">
+<kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
 <arguments>
 <arg>str($now)</arg>
@@ -904,10 +930,10 @@
 <assign>
 <var>${now}</var>
 </assign>
-<msg level="INFO" timestamp="20190604 22:24:49.057">${now} = 1559658289</msg>
-<status starttime="20190604 22:24:49.054" status="PASS" endtime="20190604 22:24:49.057"></status>
+<msg level="INFO" timestamp="20190604 23:12:51.345">${now} = 1559661171</msg>
+<status endtime="20190604 23:12:51.347" status="PASS" starttime="20190604 23:12:51.341"></status>
 </kw>
-<kw library="学校管理" name="设置招生录取时间">
+<kw name="设置招生录取时间" library="学校管理">
 <arguments>
 <arg>${now}</arg>
 <arg>test1</arg>
@@ -916,53 +942,60 @@
 <arg>2019-5-10</arg>
 <arg>2019-5-30</arg>
 </arguments>
-<kw library="学校管理" name="新增学校页面">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>${shool}:学校名称，${type}：学校类型，${remard}：备注，${expected}：期望值，${starttime}：开始时间，${endtime}：结束时间</arg>
+</arguments>
+<status endtime="20190604 23:12:51.351" status="PASS" starttime="20190604 23:12:51.350"></status>
+</kw>
+<kw name="新增学校页面" library="学校管理">
 <arguments>
 <arg>${shool}</arg>
 <arg>${type}</arg>
 <arg>${remard}</arg>
 </arguments>
-<kw library="学校管理" name="点击新建学校">
-<kw library="Selenium2Library" name="Wait Until Element Is Enabled">
+<kw name="点击新建学校" library="学校管理">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until element ``locator`` is enabled.</doc>
 <arguments>
 <arg>xpath=//*[@id="sour"]/div[4]/button[1]</arg>
 </arguments>
-<status starttime="20190604 22:24:49.067" status="PASS" endtime="20190604 22:24:49.110"></status>
+<status endtime="20190604 23:12:51.395" status="PASS" starttime="20190604 23:12:51.354"></status>
 </kw>
-<kw library="Selenium2Library" name="Click Button">
+<kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="sour"]/div[4]/button[1]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:49.112">Clicking button 'xpath=//*[@id="sour"]/div[4]/button[1]'.</msg>
-<status starttime="20190604 22:24:49.111" status="PASS" endtime="20190604 22:24:49.233"></status>
+<msg level="INFO" timestamp="20190604 23:12:51.396">Clicking button 'xpath=//*[@id="sour"]/div[4]/button[1]'.</msg>
+<status endtime="20190604 23:12:51.524" status="PASS" starttime="20190604 23:12:51.395"></status>
 </kw>
-<status starttime="20190604 22:24:49.065" status="PASS" endtime="20190604 22:24:49.234"></status>
+<status endtime="20190604 23:12:51.525" status="PASS" starttime="20190604 23:12:51.353"></status>
 </kw>
-<kw library="学校管理" name="输入学校名称">
+<kw name="输入学校名称" library="学校管理">
 <arguments>
 <arg>${shool_name}</arg>
 </arguments>
-<kw library="Selenium2Library" name="Wait Until Element Is Visible">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolName_add"]</arg>
 </arguments>
-<status starttime="20190604 22:24:49.237" status="PASS" endtime="20190604 22:24:49.507"></status>
+<status endtime="20190604 23:12:51.804" status="PASS" starttime="20190604 23:12:51.529"></status>
 </kw>
-<kw library="Selenium2Library" name="Input Text">
+<kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolName_add"]</arg>
 <arg>${text}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:49.510">Typing text '1559658289' into text field 'Xpath=//*[@id="schoolName_add"]'.</msg>
-<status starttime="20190604 22:24:49.508" status="PASS" endtime="20190604 22:24:49.926"></status>
+<msg level="INFO" timestamp="20190604 23:12:51.805">Typing text '1559661171' into text field 'Xpath=//*[@id="schoolName_add"]'.</msg>
+<status endtime="20190604 23:12:52.153" status="PASS" starttime="20190604 23:12:51.805"></status>
 </kw>
-<status starttime="20190604 22:24:49.235" status="PASS" endtime="20190604 22:24:49.928"></status>
+<status endtime="20190604 23:12:52.155" status="PASS" starttime="20190604 23:12:51.527"></status>
 </kw>
-<kw library="BuiltIn" name="Run Keyword If">
+<kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <arguments>
 <arg>$shool=='小学'</arg>
@@ -977,188 +1010,188 @@
 <arg>$shool=='幼儿园'</arg>
 <arg>勾选幼儿园</arg>
 </arguments>
-<kw library="学校管理" name="勾选小学">
-<kw library="Selenium2Library" name="Click Element">
+<kw name="勾选小学" library="学校管理">
+<kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="add_schoolType2"]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:49.937">Clicking element 'Xpath=//*[@id="add_schoolType2"]'.</msg>
-<status starttime="20190604 22:24:49.935" status="PASS" endtime="20190604 22:24:50.049"></status>
+<msg level="INFO" timestamp="20190604 23:12:52.162">Clicking element 'Xpath=//*[@id="add_schoolType2"]'.</msg>
+<status endtime="20190604 23:12:52.280" status="PASS" starttime="20190604 23:12:52.161"></status>
 </kw>
-<status starttime="20190604 22:24:49.933" status="PASS" endtime="20190604 22:24:50.051"></status>
+<status endtime="20190604 23:12:52.281" status="PASS" starttime="20190604 23:12:52.159"></status>
 </kw>
-<status starttime="20190604 22:24:49.929" status="PASS" endtime="20190604 22:24:50.052"></status>
+<status endtime="20190604 23:12:52.282" status="PASS" starttime="20190604 23:12:52.156"></status>
 </kw>
-<kw library="学校管理" name="输入备注">
+<kw name="输入备注" library="学校管理">
 <arguments>
 <arg>${remard}</arg>
 </arguments>
-<kw library="Selenium2Library" name="Input Text">
+<kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="remark_add"]</arg>
 <arg>${text}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:50.057">Typing text 'test1' into text field 'Xpath=//*[@id="remark_add"]'.</msg>
-<status starttime="20190604 22:24:50.056" status="PASS" endtime="20190604 22:24:50.377"></status>
+<msg level="INFO" timestamp="20190604 23:12:52.287">Typing text 'test1' into text field 'Xpath=//*[@id="remark_add"]'.</msg>
+<status endtime="20190604 23:12:52.599" status="PASS" starttime="20190604 23:12:52.286"></status>
 </kw>
-<status starttime="20190604 22:24:50.054" status="PASS" endtime="20190604 22:24:50.378"></status>
+<status endtime="20190604 23:12:52.600" status="PASS" starttime="20190604 23:12:52.284"></status>
 </kw>
-<kw library="学校管理" name="点击提交">
-<kw library="Selenium2Library" name="Click Button">
+<kw name="点击提交" library="学校管理">
+<kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="addSchoolSubmit"]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:50.382">Clicking button 'Xpath=//*[@id="addSchoolSubmit"]'.</msg>
-<status starttime="20190604 22:24:50.380" status="PASS" endtime="20190604 22:24:50.633"></status>
+<msg level="INFO" timestamp="20190604 23:12:52.604">Clicking button 'Xpath=//*[@id="addSchoolSubmit"]'.</msg>
+<status endtime="20190604 23:12:52.892" status="PASS" starttime="20190604 23:12:52.603"></status>
 </kw>
-<status starttime="20190604 22:24:50.379" status="PASS" endtime="20190604 22:24:50.635"></status>
+<status endtime="20190604 23:12:52.894" status="PASS" starttime="20190604 23:12:52.601"></status>
 </kw>
-<kw library="学校管理" name="等待返回列表">
-<kw library="Selenium2Library" name="Wait Until Element Is Visible">
+<kw name="等待返回列表" library="学校管理">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolInfoList"]/tr[1]/td[3]</arg>
 </arguments>
-<status starttime="20190604 22:24:50.638" status="PASS" endtime="20190604 22:24:50.760"></status>
+<status endtime="20190604 23:12:52.970" status="PASS" starttime="20190604 23:12:52.897"></status>
 </kw>
-<status starttime="20190604 22:24:50.636" status="PASS" endtime="20190604 22:24:50.762"></status>
+<status endtime="20190604 23:12:52.971" status="PASS" starttime="20190604 23:12:52.895"></status>
 </kw>
-<status starttime="20190604 22:24:49.062" status="PASS" endtime="20190604 22:24:50.764"></status>
+<status endtime="20190604 23:12:52.972" status="PASS" starttime="20190604 23:12:51.352"></status>
 </kw>
-<kw library="Selenium2Library" name="Page Should Contain">
+<kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>${expected}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:50.801">Current page contains text '1559658289'.</msg>
-<status starttime="20190604 22:24:50.765" status="PASS" endtime="20190604 22:24:50.801"></status>
+<msg level="INFO" timestamp="20190604 23:12:53.007">Current page contains text '1559661171'.</msg>
+<status endtime="20190604 23:12:53.008" status="PASS" starttime="20190604 23:12:52.972"></status>
 </kw>
-<kw library="学校管理" name="设置招生录取时间页面">
+<kw name="设置招生录取时间页面" library="学校管理">
 <arguments>
 <arg>${starttime}</arg>
 <arg>${endtime}</arg>
 </arguments>
-<kw library="学校管理" name="点击学校复选框">
-<kw library="Selenium2Library" name="Wait Until Element Is Enabled">
+<kw name="点击学校复选框" library="学校管理">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until element ``locator`` is enabled.</doc>
 <arguments>
 <arg>Xpath=//*[@id="Checkbox1"]</arg>
 </arguments>
-<status starttime="20190604 22:24:50.804" status="PASS" endtime="20190604 22:24:50.884"></status>
+<status endtime="20190604 23:12:53.070" status="PASS" starttime="20190604 23:12:53.013"></status>
 </kw>
-<kw library="Selenium2Library" name="Click Element">
+<kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="Checkbox1"]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:50.886">Clicking element 'Xpath=//*[@id="Checkbox1"]'.</msg>
-<status starttime="20190604 22:24:50.885" status="PASS" endtime="20190604 22:24:50.997"></status>
+<msg level="INFO" timestamp="20190604 23:12:53.071">Clicking element 'Xpath=//*[@id="Checkbox1"]'.</msg>
+<status endtime="20190604 23:12:53.226" status="PASS" starttime="20190604 23:12:53.070"></status>
 </kw>
-<status starttime="20190604 22:24:50.803" status="PASS" endtime="20190604 22:24:50.998"></status>
+<status endtime="20190604 23:12:53.228" status="PASS" starttime="20190604 23:12:53.012"></status>
 </kw>
-<kw library="学校管理" name="点击设置招生录取时间">
-<kw library="Selenium2Library" name="Wait Until Element Is Enabled">
+<kw name="点击设置招生录取时间" library="学校管理">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until element ``locator`` is enabled.</doc>
 <arguments>
 <arg>Xpath=//*[@id="sour"]/div[4]/button[3]</arg>
 </arguments>
-<status starttime="20190604 22:24:51.002" status="PASS" endtime="20190604 22:24:51.061"></status>
+<status endtime="20190604 23:12:53.293" status="PASS" starttime="20190604 23:12:53.231"></status>
 </kw>
-<kw library="Selenium2Library" name="Click Button">
+<kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="sour"]/div[4]/button[3]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:51.062">Clicking button 'Xpath=//*[@id="sour"]/div[4]/button[3]'.</msg>
-<status starttime="20190604 22:24:51.061" status="PASS" endtime="20190604 22:24:51.207"></status>
+<msg level="INFO" timestamp="20190604 23:12:53.295">Clicking button 'Xpath=//*[@id="sour"]/div[4]/button[3]'.</msg>
+<status endtime="20190604 23:12:53.434" status="PASS" starttime="20190604 23:12:53.294"></status>
 </kw>
-<status starttime="20190604 22:24:51.000" status="PASS" endtime="20190604 22:24:51.208"></status>
+<status endtime="20190604 23:12:53.435" status="PASS" starttime="20190604 23:12:53.229"></status>
 </kw>
-<kw library="学校管理" name="点击限制招生时间">
-<kw library="Selenium2Library" name="Wait Until Element Is Visible">
+<kw name="点击限制招生时间" library="学校管理">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>Xpath=//*[@id="limitTime"]</arg>
 </arguments>
-<status starttime="20190604 22:24:51.211" status="PASS" endtime="20190604 22:24:51.496"></status>
+<status endtime="20190604 23:12:53.719" status="PASS" starttime="20190604 23:12:53.438"></status>
 </kw>
-<kw library="Selenium2Library" name="Click Element">
+<kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="limitTime"]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:51.498">Clicking element 'Xpath=//*[@id="limitTime"]'.</msg>
-<status starttime="20190604 22:24:51.497" status="PASS" endtime="20190604 22:24:51.655"></status>
+<msg level="INFO" timestamp="20190604 23:12:53.720">Clicking element 'Xpath=//*[@id="limitTime"]'.</msg>
+<status endtime="20190604 23:12:53.872" status="PASS" starttime="20190604 23:12:53.720"></status>
 </kw>
-<status starttime="20190604 22:24:51.210" status="PASS" endtime="20190604 22:24:51.656"></status>
+<status endtime="20190604 23:12:53.873" status="PASS" starttime="20190604 23:12:53.436"></status>
 </kw>
-<kw library="学校管理" name="选择招生开始时间">
+<kw name="选择招生开始时间" library="学校管理">
 <arguments>
 <arg>${starttime}</arg>
 </arguments>
-<kw library="Selenium2Library" name="Assign Id To Element">
+<kw name="Assign Id To Element" library="Selenium2Library">
 <doc>Assigns temporary ``id`` to element specified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="startTime"]</arg>
 <arg>startTime</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:51.660">Assigning temporary id 'startTime' to element 'Xpath=//*[@id="startTime"]'.</msg>
-<status starttime="20190604 22:24:51.658" status="PASS" endtime="20190604 22:24:51.747"></status>
+<msg level="INFO" timestamp="20190604 23:12:53.877">Assigning temporary id 'startTime' to element 'Xpath=//*[@id="startTime"]'.</msg>
+<status endtime="20190604 23:12:53.913" status="PASS" starttime="20190604 23:12:53.876"></status>
 </kw>
-<kw library="Selenium2Library" name="Execute Javascript">
+<kw name="Execute Javascript" library="Selenium2Library">
 <doc>Executes the given JavaScript code with possible arguments.</doc>
 <arguments>
 <arg>window.document.getElementById('startTime').value="${starttime}"</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:51.750">Executing JavaScript:
+<msg level="INFO" timestamp="20190604 23:12:53.916">Executing JavaScript:
 window.document.getElementById('startTime').value="2019-5-10"
 Without any arguments.</msg>
-<status starttime="20190604 22:24:51.748" status="PASS" endtime="20190604 22:24:51.761"></status>
+<status endtime="20190604 23:12:53.926" status="PASS" starttime="20190604 23:12:53.914"></status>
 </kw>
-<status starttime="20190604 22:24:51.657" status="PASS" endtime="20190604 22:24:51.762"></status>
+<status endtime="20190604 23:12:53.927" status="PASS" starttime="20190604 23:12:53.874"></status>
 </kw>
-<kw library="学校管理" name="选择招生结束时间">
+<kw name="选择招生结束时间" library="学校管理">
 <arguments>
 <arg>${endtime}</arg>
 </arguments>
-<kw library="Selenium2Library" name="Assign Id To Element">
+<kw name="Assign Id To Element" library="Selenium2Library">
 <doc>Assigns temporary ``id`` to element specified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="endTime"]</arg>
 <arg>endTime</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:51.767">Assigning temporary id 'endTime' to element 'Xpath=//*[@id="endTime"]'.</msg>
-<status starttime="20190604 22:24:51.765" status="PASS" endtime="20190604 22:24:51.798"></status>
+<msg level="INFO" timestamp="20190604 23:12:53.931">Assigning temporary id 'endTime' to element 'Xpath=//*[@id="endTime"]'.</msg>
+<status endtime="20190604 23:12:53.964" status="PASS" starttime="20190604 23:12:53.930"></status>
 </kw>
-<kw library="Selenium2Library" name="Execute Javascript">
+<kw name="Execute Javascript" library="Selenium2Library">
 <doc>Executes the given JavaScript code with possible arguments.</doc>
 <arguments>
 <arg>window.document.getElementById('endTime').value="${endtime}"</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:51.801">Executing JavaScript:
+<msg level="INFO" timestamp="20190604 23:12:53.967">Executing JavaScript:
 window.document.getElementById('endTime').value="2019-5-30"
 Without any arguments.</msg>
-<status starttime="20190604 22:24:51.799" status="PASS" endtime="20190604 22:24:51.812"></status>
+<status endtime="20190604 23:12:53.977" status="PASS" starttime="20190604 23:12:53.964"></status>
 </kw>
-<status starttime="20190604 22:24:51.763" status="PASS" endtime="20190604 22:24:51.814"></status>
+<status endtime="20190604 23:12:53.978" status="PASS" starttime="20190604 23:12:53.929"></status>
 </kw>
-<kw library="学校管理" name="点击招生录取时间设置确定">
-<kw library="Selenium2Library" name="Click Button">
+<kw name="点击招生录取时间设置确定" library="学校管理">
+<kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="setEnrollmentTime"]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:51.817">Clicking button 'Xpath=//*[@id="setEnrollmentTime"]'.</msg>
-<status starttime="20190604 22:24:51.816" status="PASS" endtime="20190604 22:24:52.224"></status>
+<msg level="INFO" timestamp="20190604 23:12:53.981">Clicking button 'Xpath=//*[@id="setEnrollmentTime"]'.</msg>
+<status endtime="20190604 23:12:54.203" status="PASS" starttime="20190604 23:12:53.980"></status>
 </kw>
-<status starttime="20190604 22:24:51.815" status="PASS" endtime="20190604 22:24:52.225"></status>
+<status endtime="20190604 23:12:54.204" status="PASS" starttime="20190604 23:12:53.979"></status>
 </kw>
-<status starttime="20190604 22:24:50.802" status="PASS" endtime="20190604 22:24:52.227"></status>
+<status endtime="20190604 23:12:54.205" status="PASS" starttime="20190604 23:12:53.010"></status>
 </kw>
-<kw library="BuiltIn" name="Catenate">
+<kw name="Catenate" library="BuiltIn">
 <doc>Catenates the given items together and returns the resulted string.</doc>
 <arguments>
 <arg>SEPARATOR=</arg>
@@ -1170,23 +1203,23 @@ Without any arguments.</msg>
 <assign>
 <var>${res_time}</var>
 </assign>
-<msg level="INFO" timestamp="20190604 22:24:52.230">${res_time} = 2019-5-10,
+<msg level="INFO" timestamp="20190604 23:12:54.209">${res_time} = 2019-5-10,
 2019-5-30</msg>
-<status starttime="20190604 22:24:52.228" status="PASS" endtime="20190604 22:24:52.230"></status>
+<status endtime="20190604 23:12:54.210" status="PASS" starttime="20190604 23:12:54.207"></status>
 </kw>
-<kw library="学校管理" name="获取招生录入时间">
+<kw name="获取招生录入时间" library="学校管理">
 <assign>
 <var>${gettime}</var>
 </assign>
-<kw library="Selenium2Library" name="Wait Until Element Is Visible">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolInfoList"]/tr[1]/td[6]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:52.332">Suppressing StaleElementReferenceException from Selenium.</msg>
-<status starttime="20190604 22:24:52.233" status="PASS" endtime="20190604 22:24:52.571"></status>
+<msg level="INFO" timestamp="20190604 23:12:54.306">Suppressing StaleElementReferenceException from Selenium.</msg>
+<status endtime="20190604 23:12:54.548" status="PASS" starttime="20190604 23:12:54.213"></status>
 </kw>
-<kw library="Selenium2Library" name="Get Text">
+<kw name="Get Text" library="Selenium2Library">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolInfoList"]/tr[1]/td[6]</arg>
@@ -1194,66 +1227,73 @@ Without any arguments.</msg>
 <assign>
 <var>${time}</var>
 </assign>
-<msg level="INFO" timestamp="20190604 22:24:52.616">${time} = 2019-5-10,
+<msg level="INFO" timestamp="20190604 23:12:54.591">${time} = 2019-5-10,
 2019-5-30</msg>
-<status starttime="20190604 22:24:52.572" status="PASS" endtime="20190604 22:24:52.617"></status>
+<status endtime="20190604 23:12:54.592" status="PASS" starttime="20190604 23:12:54.549"></status>
 </kw>
-<kw library="BuiltIn" name="Log">
+<kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${time}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:52.618">2019-5-10,
+<msg level="INFO" timestamp="20190604 23:12:54.593">2019-5-10,
 2019-5-30</msg>
-<status starttime="20190604 22:24:52.617" status="PASS" endtime="20190604 22:24:52.618"></status>
+<status endtime="20190604 23:12:54.593" status="PASS" starttime="20190604 23:12:54.592"></status>
 </kw>
-<msg level="INFO" timestamp="20190604 22:24:52.619">${gettime} = 2019-5-10,
+<msg level="INFO" timestamp="20190604 23:12:54.594">${gettime} = 2019-5-10,
 2019-5-30</msg>
-<status starttime="20190604 22:24:52.232" status="PASS" endtime="20190604 22:24:52.620"></status>
+<status endtime="20190604 23:12:54.594" status="PASS" starttime="20190604 23:12:54.211"></status>
 </kw>
-<kw library="BuiltIn" name="Should Contain">
+<kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
 <arguments>
 <arg>${gettime}</arg>
 <arg>${res_time}</arg>
 </arguments>
-<status starttime="20190604 22:24:52.620" status="PASS" endtime="20190604 22:24:52.621"></status>
+<status endtime="20190604 23:12:54.596" status="PASS" starttime="20190604 23:12:54.595"></status>
 </kw>
-<kw library="mysql" name="执行sql">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>删除数据</arg>
+</arguments>
+<status endtime="20190604 23:12:54.597" status="PASS" starttime="20190604 23:12:54.596"></status>
+</kw>
+<kw name="执行sql" library="mysql">
 <arguments>
 <arg>DELETE from t_school_info WHERE f_school_name ="${shool}";</arg>
 </arguments>
-<kw library="DatabaseLibrary" name="Connect To Database Using Custom Params">
+<kw name="Connect To Database Using Custom Params" library="DatabaseLibrary">
 <doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to</doc>
 <arguments>
 <arg>pymysql</arg>
 <arg>database='recruit_students', user='root', password='123456', host='localhost', port=3306</arg>
 </arguments>
-<status starttime="20190604 22:24:52.622" status="PASS" endtime="20190604 22:24:53.632"></status>
+<status endtime="20190604 23:12:55.604" status="PASS" starttime="20190604 23:12:54.598"></status>
 </kw>
-<kw library="DatabaseLibrary" name="Execute Sql String">
+<kw name="Execute Sql String" library="DatabaseLibrary">
 <doc>Executes the sqlString as SQL commands.</doc>
 <arguments>
 <arg>${sql}</arg>
 </arguments>
-<status starttime="20190604 22:24:53.632" status="PASS" endtime="20190604 22:24:53.673"></status>
+<status endtime="20190604 23:12:55.645" status="PASS" starttime="20190604 23:12:55.605"></status>
 </kw>
-<kw library="DatabaseLibrary" name="Disconnect From Database">
+<kw name="Disconnect From Database" library="DatabaseLibrary">
 <doc>Disconnects from the database.</doc>
-<status starttime="20190604 22:24:53.674" status="PASS" endtime="20190604 22:24:53.675"></status>
+<status endtime="20190604 23:12:55.647" status="PASS" starttime="20190604 23:12:55.646"></status>
 </kw>
-<status starttime="20190604 22:24:52.621" status="PASS" endtime="20190604 22:24:53.676"></status>
+<status endtime="20190604 23:12:55.648" status="PASS" starttime="20190604 23:12:54.597"></status>
 </kw>
-<status starttime="20190604 22:24:49.058" status="PASS" endtime="20190604 22:24:53.677"></status>
+<status endtime="20190604 23:12:55.649" status="PASS" starttime="20190604 23:12:51.348"></status>
 </kw>
-<kw type="teardown" library="Selenium2Library" name="Reload Page">
+<kw name="Reload Page" library="Selenium2Library" type="teardown">
 <doc>Simulates user reloading page.</doc>
-<status starttime="20190604 22:24:53.678" status="PASS" endtime="20190604 22:24:53.983"></status>
+<status endtime="20190604 23:12:55.925" status="PASS" starttime="20190604 23:12:55.649"></status>
 </kw>
-<status starttime="20190604 22:24:49.047" status="PASS" critical="yes" endtime="20190604 22:24:53.984"></status>
+<status endtime="20190604 23:12:55.927" critical="yes" status="PASS" starttime="20190604 23:12:51.332"></status>
 </test>
-<test id="s1-s1-s1-s1-t6" name="学校名称为空">
-<kw library="BuiltIn" name="Evaluate">
+<test name="学校名称为空" id="s1-s1-s1-s1-t6">
+<kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
 <arguments>
 <arg>""</arg>
@@ -1261,63 +1301,70 @@ Without any arguments.</msg>
 <assign>
 <var>${now}</var>
 </assign>
-<msg level="INFO" timestamp="20190604 22:24:53.989">${now} = </msg>
-<status starttime="20190604 22:24:53.987" status="PASS" endtime="20190604 22:24:53.990"></status>
+<msg level="INFO" timestamp="20190604 23:12:55.934">${now} = </msg>
+<status endtime="20190604 23:12:55.935" status="PASS" starttime="20190604 23:12:55.933"></status>
 </kw>
-<kw library="学校管理" name="新增学校">
+<kw name="新增学校" library="学校管理">
 <arguments>
 <arg>${now}</arg>
 <arg>小学</arg>
 <arg>小学</arg>
 <arg>请输入学校名称</arg>
 </arguments>
-<kw library="学校管理" name="新增学校页面">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>${shool}:学校名称，${type}：学校类型，${remard}：备注，${expected}：期望值</arg>
+</arguments>
+<status endtime="20190604 23:12:55.939" status="PASS" starttime="20190604 23:12:55.938"></status>
+</kw>
+<kw name="新增学校页面" library="学校管理">
 <arguments>
 <arg>${shool}</arg>
 <arg>${type}</arg>
 <arg>${remard}</arg>
 </arguments>
-<kw library="学校管理" name="点击新建学校">
-<kw library="Selenium2Library" name="Wait Until Element Is Enabled">
+<kw name="点击新建学校" library="学校管理">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until element ``locator`` is enabled.</doc>
 <arguments>
 <arg>xpath=//*[@id="sour"]/div[4]/button[1]</arg>
 </arguments>
-<status starttime="20190604 22:24:53.998" status="PASS" endtime="20190604 22:24:54.055"></status>
+<status endtime="20190604 23:12:56.007" status="PASS" starttime="20190604 23:12:55.945"></status>
 </kw>
-<kw library="Selenium2Library" name="Click Button">
+<kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="sour"]/div[4]/button[1]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:54.057">Clicking button 'xpath=//*[@id="sour"]/div[4]/button[1]'.</msg>
-<status starttime="20190604 22:24:54.056" status="PASS" endtime="20190604 22:24:54.189"></status>
+<msg level="INFO" timestamp="20190604 23:12:56.010">Clicking button 'xpath=//*[@id="sour"]/div[4]/button[1]'.</msg>
+<status endtime="20190604 23:12:56.140" status="PASS" starttime="20190604 23:12:56.009"></status>
 </kw>
-<status starttime="20190604 22:24:53.996" status="PASS" endtime="20190604 22:24:54.190"></status>
+<status endtime="20190604 23:12:56.141" status="PASS" starttime="20190604 23:12:55.942"></status>
 </kw>
-<kw library="学校管理" name="输入学校名称">
+<kw name="输入学校名称" library="学校管理">
 <arguments>
 <arg>${shool_name}</arg>
 </arguments>
-<kw library="Selenium2Library" name="Wait Until Element Is Visible">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolName_add"]</arg>
 </arguments>
-<status starttime="20190604 22:24:54.193" status="PASS" endtime="20190604 22:24:54.480"></status>
+<status endtime="20190604 23:12:56.415" status="PASS" starttime="20190604 23:12:56.145"></status>
 </kw>
-<kw library="Selenium2Library" name="Input Text">
+<kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolName_add"]</arg>
 <arg>${text}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:54.482">Typing text '' into text field 'Xpath=//*[@id="schoolName_add"]'.</msg>
-<status starttime="20190604 22:24:54.481" status="PASS" endtime="20190604 22:24:54.721"></status>
+<msg level="INFO" timestamp="20190604 23:12:56.417">Typing text '' into text field 'Xpath=//*[@id="schoolName_add"]'.</msg>
+<status endtime="20190604 23:12:56.672" status="PASS" starttime="20190604 23:12:56.416"></status>
 </kw>
-<status starttime="20190604 22:24:54.191" status="PASS" endtime="20190604 22:24:54.722"></status>
+<status endtime="20190604 23:12:56.673" status="PASS" starttime="20190604 23:12:56.143"></status>
 </kw>
-<kw library="BuiltIn" name="Run Keyword If">
+<kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <arguments>
 <arg>$shool=='小学'</arg>
@@ -1332,132 +1379,132 @@ Without any arguments.</msg>
 <arg>$shool=='幼儿园'</arg>
 <arg>勾选幼儿园</arg>
 </arguments>
-<kw library="学校管理" name="勾选小学">
-<kw library="Selenium2Library" name="Click Element">
+<kw name="勾选小学" library="学校管理">
+<kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="add_schoolType2"]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:54.730">Clicking element 'Xpath=//*[@id="add_schoolType2"]'.</msg>
-<status starttime="20190604 22:24:54.729" status="PASS" endtime="20190604 22:24:54.853"></status>
+<msg level="INFO" timestamp="20190604 23:12:56.683">Clicking element 'Xpath=//*[@id="add_schoolType2"]'.</msg>
+<status endtime="20190604 23:12:56.792" status="PASS" starttime="20190604 23:12:56.681"></status>
 </kw>
-<status starttime="20190604 22:24:54.727" status="PASS" endtime="20190604 22:24:54.854"></status>
+<status endtime="20190604 23:12:56.794" status="PASS" starttime="20190604 23:12:56.679"></status>
 </kw>
-<status starttime="20190604 22:24:54.723" status="PASS" endtime="20190604 22:24:54.855"></status>
+<status endtime="20190604 23:12:56.795" status="PASS" starttime="20190604 23:12:56.675"></status>
 </kw>
-<kw library="学校管理" name="输入备注">
+<kw name="输入备注" library="学校管理">
 <arguments>
 <arg>${remard}</arg>
 </arguments>
-<kw library="Selenium2Library" name="Input Text">
+<kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="remark_add"]</arg>
 <arg>${text}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:54.858">Typing text '小学' into text field 'Xpath=//*[@id="remark_add"]'.</msg>
-<status starttime="20190604 22:24:54.857" status="PASS" endtime="20190604 22:24:55.161"></status>
+<msg level="INFO" timestamp="20190604 23:12:56.799">Typing text '小学' into text field 'Xpath=//*[@id="remark_add"]'.</msg>
+<status endtime="20190604 23:12:57.096" status="PASS" starttime="20190604 23:12:56.798"></status>
 </kw>
-<status starttime="20190604 22:24:54.856" status="PASS" endtime="20190604 22:24:55.163"></status>
+<status endtime="20190604 23:12:57.097" status="PASS" starttime="20190604 23:12:56.796"></status>
 </kw>
-<kw library="学校管理" name="点击提交">
-<kw library="Selenium2Library" name="Click Button">
+<kw name="点击提交" library="学校管理">
+<kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>Xpath=//*[@id="addSchoolSubmit"]</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:55.167">Clicking button 'Xpath=//*[@id="addSchoolSubmit"]'.</msg>
-<status starttime="20190604 22:24:55.166" status="PASS" endtime="20190604 22:24:55.281"></status>
+<msg level="INFO" timestamp="20190604 23:12:57.102">Clicking button 'Xpath=//*[@id="addSchoolSubmit"]'.</msg>
+<status endtime="20190604 23:12:57.225" status="PASS" starttime="20190604 23:12:57.100"></status>
 </kw>
-<status starttime="20190604 22:24:55.164" status="PASS" endtime="20190604 22:24:55.282"></status>
+<status endtime="20190604 23:12:57.227" status="PASS" starttime="20190604 23:12:57.098"></status>
 </kw>
-<kw library="学校管理" name="等待返回列表">
-<kw library="Selenium2Library" name="Wait Until Element Is Visible">
+<kw name="等待返回列表" library="学校管理">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>Xpath=//*[@id="schoolInfoList"]/tr[1]/td[3]</arg>
 </arguments>
-<status starttime="20190604 22:24:55.285" status="PASS" endtime="20190604 22:24:55.365"></status>
+<status endtime="20190604 23:12:57.359" status="PASS" starttime="20190604 23:12:57.231"></status>
 </kw>
-<status starttime="20190604 22:24:55.283" status="PASS" endtime="20190604 22:24:55.367"></status>
+<status endtime="20190604 23:12:57.361" status="PASS" starttime="20190604 23:12:57.229"></status>
 </kw>
-<status starttime="20190604 22:24:53.994" status="PASS" endtime="20190604 22:24:55.368"></status>
+<status endtime="20190604 23:12:57.363" status="PASS" starttime="20190604 23:12:55.940"></status>
 </kw>
-<kw library="Selenium2Library" name="Page Should Contain">
+<kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>${expected}</arg>
 </arguments>
-<msg level="INFO" timestamp="20190604 22:24:55.437">Current page contains text '请输入学校名称'.</msg>
-<status starttime="20190604 22:24:55.369" status="PASS" endtime="20190604 22:24:55.438"></status>
+<msg level="INFO" timestamp="20190604 23:12:57.401">Current page contains text '请输入学校名称'.</msg>
+<status endtime="20190604 23:12:57.402" status="PASS" starttime="20190604 23:12:57.364"></status>
 </kw>
-<kw library="BuiltIn" name="Comment">
+<kw name="Comment" library="BuiltIn">
 <doc>Displays the given messages in the log file as keyword arguments.</doc>
 <arguments>
 <arg>删除数据</arg>
 </arguments>
-<status starttime="20190604 22:24:55.439" status="PASS" endtime="20190604 22:24:55.440"></status>
+<status endtime="20190604 23:12:57.404" status="PASS" starttime="20190604 23:12:57.403"></status>
 </kw>
-<kw library="mysql" name="执行sql">
+<kw name="执行sql" library="mysql">
 <arguments>
 <arg>DELETE from t_school_info WHERE f_school_name ="${shool}";</arg>
 </arguments>
-<kw library="DatabaseLibrary" name="Connect To Database Using Custom Params">
+<kw name="Connect To Database Using Custom Params" library="DatabaseLibrary">
 <doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to</doc>
 <arguments>
 <arg>pymysql</arg>
 <arg>database='recruit_students', user='root', password='123456', host='localhost', port=3306</arg>
 </arguments>
-<status starttime="20190604 22:24:55.441" status="PASS" endtime="20190604 22:24:56.451"></status>
+<status endtime="20190604 23:12:58.414" status="PASS" starttime="20190604 23:12:57.405"></status>
 </kw>
-<kw library="DatabaseLibrary" name="Execute Sql String">
+<kw name="Execute Sql String" library="DatabaseLibrary">
 <doc>Executes the sqlString as SQL commands.</doc>
 <arguments>
 <arg>${sql}</arg>
 </arguments>
-<status starttime="20190604 22:24:56.452" status="PASS" endtime="20190604 22:24:56.455"></status>
+<status endtime="20190604 23:12:58.418" status="PASS" starttime="20190604 23:12:58.415"></status>
 </kw>
-<kw library="DatabaseLibrary" name="Disconnect From Database">
+<kw name="Disconnect From Database" library="DatabaseLibrary">
 <doc>Disconnects from the database.</doc>
-<status starttime="20190604 22:24:56.456" status="PASS" endtime="20190604 22:24:56.457"></status>
+<status endtime="20190604 23:12:58.420" status="PASS" starttime="20190604 23:12:58.418"></status>
 </kw>
-<status starttime="20190604 22:24:55.440" status="PASS" endtime="20190604 22:24:56.457"></status>
+<status endtime="20190604 23:12:58.420" status="PASS" starttime="20190604 23:12:57.404"></status>
 </kw>
-<status starttime="20190604 22:24:53.991" status="PASS" endtime="20190604 22:24:56.458"></status>
+<status endtime="20190604 23:12:58.421" status="PASS" starttime="20190604 23:12:55.936"></status>
 </kw>
-<kw type="teardown" library="Selenium2Library" name="Reload Page">
+<kw name="Reload Page" library="Selenium2Library" type="teardown">
 <doc>Simulates user reloading page.</doc>
-<status starttime="20190604 22:24:56.459" status="PASS" endtime="20190604 22:24:56.766"></status>
+<status endtime="20190604 23:12:58.659" status="PASS" starttime="20190604 23:12:58.421"></status>
 </kw>
-<status starttime="20190604 22:24:53.985" status="PASS" critical="yes" endtime="20190604 22:24:56.767"></status>
+<status endtime="20190604 23:12:58.661" critical="yes" status="PASS" starttime="20190604 23:12:55.929"></status>
 </test>
-<kw type="teardown" library="login" name="关闭浏览器">
-<kw library="Selenium2Library" name="Close Browser">
+<kw name="关闭浏览器" library="login" type="teardown">
+<kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status starttime="20190604 22:24:56.771" status="PASS" endtime="20190604 22:24:59.937"></status>
+<status endtime="20190604 23:13:01.849" status="PASS" starttime="20190604 23:12:58.668"></status>
 </kw>
-<status starttime="20190604 22:24:56.770" status="PASS" endtime="20190604 22:24:59.938"></status>
+<status endtime="20190604 23:13:01.850" status="PASS" starttime="20190604 23:12:58.666"></status>
 </kw>
-<status starttime="20190604 22:24:18.796" status="PASS" endtime="20190604 22:24:59.938"></status>
+<status endtime="20190604 23:13:01.850" status="PASS" starttime="20190604 23:12:14.855"></status>
 </suite>
-<status starttime="20190604 22:24:18.791" status="PASS" endtime="20190604 22:24:59.947"></status>
+<status endtime="20190604 23:13:01.857" status="PASS" starttime="20190604 23:12:14.847"></status>
 </suite>
-<status starttime="20190604 22:24:18.784" status="PASS" endtime="20190604 22:24:59.952"></status>
+<status endtime="20190604 23:13:01.863" status="PASS" starttime="20190604 23:12:14.838"></status>
 </suite>
-<status starttime="20190604 22:24:18.729" status="PASS" endtime="20190604 22:24:59.957"></status>
+<status endtime="20190604 23:13:01.868" status="PASS" starttime="20190604 23:12:14.776"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="6" fail="0">Critical Tests</stat>
-<stat pass="6" fail="0">All Tests</stat>
+<stat fail="0" pass="6">Critical Tests</stat>
+<stat fail="0" pass="6">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Robot" id="s1" pass="6" fail="0">Robot</stat>
-<stat name="StudentProject" id="s1-s1" pass="6" fail="0">Robot.StudentProject</stat>
-<stat name="Testcase" id="s1-s1-s1" pass="6" fail="0">Robot.StudentProject.Testcase</stat>
-<stat name="学校管理" id="s1-s1-s1-s1" pass="6" fail="0">Robot.StudentProject.Testcase.学校管理</stat>
+<stat name="Robot" id="s1" fail="0" pass="6">Robot</stat>
+<stat name="StudentProject" id="s1-s1" fail="0" pass="6">Robot.StudentProject</stat>
+<stat name="Testcase" id="s1-s1-s1" fail="0" pass="6">Robot.StudentProject.Testcase</stat>
+<stat name="学校管理" id="s1-s1-s1-s1" fail="0" pass="6">Robot.StudentProject.Testcase.学校管理</stat>
 </suite>
 </statistics>
 <errors>
